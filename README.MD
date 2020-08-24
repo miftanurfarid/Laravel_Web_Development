@@ -85,4 +85,16 @@ https://t.me/joinchat/N26HyhxzKBrIA0hSkQV7cQ
 10. Selain menghias web agar rapi dan menarik dengan CSS, kita juga dapat membuatnya lebih interaktif dengan DOM Javascript . Di situlah batu pijakan berikutnya yaitu: Dunia Javascript.
 11. Di dalam menggunakan CSS dan Javascript kita dapat menggunakan bantuan library CSS dan Javascript. Library artinya kumpulan kode yang dapat dipakai atau dipasang pada project web kita. Kita akan pelajari salah satu library CSS dan Javascript yang paling populer yaitu Bootstrap.
 12. Untuk batu pijakan selanjutnya adalah berhubungan dengan data yang akan kita olah di website kita.
-13. 
+13. Jika hanya menggunakan HTML, maka untuk menyajikan data yang lebih banyak pasti akan lebih sulit. Untuk menyajikan satu halaman profil user maka dibutuhkan 1 file html dengan nama user1.html, untuk user 2 maka file nya user2.html, begitu seterusnya.
+14. Akan semakin repot jika misalkan contoh kasus ingin mengganti layout halaman profile maka semua file profile html mesti kita ubah satu persatu.
+15. Salah satu prinsip dalam software development yaitu DRY atau singkatan dari Don’t Repeat Yourself yang berarti “jangan ulangi diri sendiri” atau dalam konteks ini kode yang kita tulis sebisa mungkin sangat efisien dan tidak mengulang-ulang kode yang sama atau redundan.
+16. Prinsip DRY dibutuhkan agar code kita bersih dari pekerjaan yang berulang dan meminimalisasi redundan.
+17. Maka dari itu, agar pekerjaan kita DRY dan bisa lebih dinamis dengan data yang ada, maka file HTML dan data dari database bisa dijembatani dengan PHP.
+18. PHP merupakan salah satu bahasa pemrograman dalam mengembangkan aplikasi web dan masih sangat populer khususnya di Indonesia.
+19. Batu pijakan selanjutnya kita akan belajar bagaimana mengatur database kita. Akan dipelajari tentang bagaimana merancang database ERD, cara mengambil dan menyimpan data dari dan ke database, dsb.
+20. Dengan menggunakan bahasa asli (native) PHP ditambah dengan Database kita dapat membuat sebuah website yang standar. Tapi tentu ada kekurangan dan kelebihannya.
+21. Jika kita membuat web dari nol dengan native PHP, waktu yang dibutuhkan bisa jadi sangat lama dan cukup sulit dikerjakan secara tim yang memiliki gaya pemrograman berbeda.
+22. Untuk itu lahirlah sebuah software atau framework agar memberikan cara yang mudah dan terstandar untuk membangun sebuah aplikasi website.
+23. Laravel adalah sebuah framework berbasis bahasa pemrograman PHP.
+24. Di Laravel inilah yang menjadi “raja terakhir” bootcamp kita. Di dalamnya kita mengintegrasikan materi-materi yang dipelajari sebelumnya untuk membuat sebuah website yang berkualitas.
+25. Begitu panjang dan rumit penjelasan  di atas mengenai materi-materi dan perannya dalam web development namun yang terpenting pelajari saja satu per satu dengan santai nan berkualitas 😎
