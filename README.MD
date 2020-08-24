@@ -1,4 +1,4 @@
-Selamat Datang Peserta 
+# Selamat Datang Peserta 
 
 Indonesia Mengoding Laravel -  Web Development Batch Agustus!
 
@@ -9,9 +9,8 @@ Channel ini akan aktif saat kick-off briefing tgl 23 Agustus 2020..
 Grup diskusi sudah tersedia, silahkan semua peserta bergabung di link 
 https://t.me/joinchat/N26HyhxzKBrIA0hSkQV7cQ
 
-----
 
-#KickOff 
+##  KickOff 
 
 Adapun tujuan diadakan training ini, utamanya sebagai bentuk kontribusi kami
 kepada bangsa untuk meningkatkan daya saing SDM khususnya di bidang Informasi dan Teknologi. Selain itu, kami juga membuka peluang adanya SDM yang dapat berkarya bersama PT. Sanbersy dan perusahaan mitra Sanbersy.
