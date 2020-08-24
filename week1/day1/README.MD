@@ -33,27 +33,27 @@
 
 9. Batas Pengumpulan Tugas Harian : 24 Jam setelah tugas diberikan. Untuk tugas HTML hari ini berarti terakhir dikumpulkan besok jam 09.30.
 
-# TIPS
+## TIPS
 
 Buat teman-teman yang pemula jangan berkecil hati jika belum mengerti materi atau tugas yang sedang didiskusikan di grup. 
 
-# SARAN:
+## SARAN:
 
 ikuti dulu video tutorial yang sudah diberikan, baca lebih banyak lagi referensi di google. 
 
 Setelah itu baru kerjakan tugas harian dan kalo ada yang kurang jelas bisa ditanyakan di grup diskusi.
 
-# Info
+## Info
 
 Jadwal fast response @Rezkyputra25 jam 10.00 – 12.00 dan @duhabduh jam 13.00 – 15.00 .
 
 Jika terkendala diluar substansi materi training seperti : tidak keluar nilai,  sakit, dan hal urgent lainnya diperbolehkan mengontak trainer secara pm
 
-# reminder 
+## reminder 
 
 mengingatkan kembali akan ada live session jam 16.00
 
-# Livesession
+## Livesession
 
 https://sanbercode.zoom.us/u/adTBIewcZy
 
