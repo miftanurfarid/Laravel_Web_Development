@@ -39,3 +39,4 @@ Peserta yang memperoleh sertifikat adalah peserta yang menyelesaikan tugas akhir
 
 Reward , Bagi Peserta kelas dasar yang memperoleh nilai akhir , >=80 akan memperoleh reward uang kembali 100%
 
+![alt text](https://github.com/miftanurfarid/Laravel_Web_Development/blob/master/pict/photo_2020-08-24_23-15-18.jpg "Logo Title Text 1")
