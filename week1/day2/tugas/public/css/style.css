@@ -1,0 +1,51 @@
+nav {
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+.nav-right{
+    float: right;
+    padding: 14px 16px;
+}
+
+.nav-right a {
+    padding: 5px 5px;
+    font-weight: bold;
+    color: blue;
+}
+
+body {
+    background-image: url("../img/pattern.jpg");
+}
+
+h1 {
+    text-align: center;
+}
+
+section{
+    box-shadow: inset 0 0 0 1000px white;
+    padding: 10px 20px;
+    margin: 80px 100px;
+}
+
+article {
+    border-bottom: 2px solid black;
+}
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 1px;
+}
