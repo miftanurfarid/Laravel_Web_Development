@@ -14,16 +14,27 @@ h1{
     color: blue;
     text-align: center;
     text-decoration: underline;
+    display: inline;
+    /* visibilikty: hidden; */
+    /* display: none; */
 }
 
 h2{
     text-align: center;
     text-transform: uppercase;
+    display: inline;
+}
+
+#menu_web{
+    margin: top right bottom left;
 }
 
 #text_pendek{
     font-size: 24px;
     font-weight: bold;
+    width: 50%;
+    height: 66px;
+    background: greenyellow;
 }
 
 #text_panjang{
@@ -32,6 +43,18 @@ h2{
     letter-spacing: 1px;
     word-spacing: 5px;
     line-height: 30px;
+}
+
+.menu{
+    display: inline-block;
+    /* height: 50px;
+    width: 100px; */
+    text-decoration: none;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+    border: 2px solid black;
+    padding: 10px 5px;
 }
 
 /* kondisi biasa */
@@ -54,4 +77,37 @@ h2{
 /* kondisi ketika sedang aktif */
 .menu:active{
     background: white;
+}
+
+/*
+    Mengatur posisi di CSS
+    1. static (default)
+    2. relative
+    3. absolute
+    4. fixed
+    */
+
+#menu_member{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+#parent_h1{
+    position: relative;
+    top: 100px;
+}
+
+#h1_member{
+    background: red;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#h2_member{
+    background: yellow;
+    position: fixed;
+    top: 100px;
+    left: 20px;
 }
