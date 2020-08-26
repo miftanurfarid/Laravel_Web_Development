@@ -1,0 +1,57 @@
+body{
+    /*
+    background-color: #fdfdfd;
+    background-image: url(sekolahkoding.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    */
+    background: #fdfdfd url("gambar/sekolahkoding.png") no-repeat fixed right;
+    font-family: sans-serif;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#text_pendek{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#text_panjang{
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+/* kondisi biasa */
+.menu:link{
+    background: grey;
+    color: white;
+}
+
+/* kondisi setelah diklik */
+.menu:visited{
+    background: grey;
+    color: white;
+}
+
+/* kondisi ketika mouse di atas link / hover */
+.menu:hover{
+    background: green;
+}
+
+/* kondisi ketika sedang aktif */
+.menu:active{
+    background: white;
+}
