@@ -1,3 +1,4 @@
+/* INI ADALAH STYLE JUMBOTRON */
 .jumbotron {
     background-image: url(img/slider1.jpg);
     background-size: cover;
@@ -22,6 +23,34 @@
     border-width: 3px;
 }
 .jumbotron .btn {
+    background-color: #F05F40;
+    border: none;
+    border-radius: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 40px;
+}
+
+/* INI ADALAH STYLE SLIDER */
+
+.carousel-item {
+    height: 600px;
+}
+
+/* .carousel-item img {
+    margin-top: -120px;
+} */
+
+.carousel-item .display-4 {
+    margin-top: -400px;
+}
+
+.carousel-item hr {
+    border-color: #F05F40;
+    width: 70px;
+    border-width: 3px;
+}
+.carousel-item .btn {
     background-color: #F05F40;
     border: none;
     border-radius: 25px;
