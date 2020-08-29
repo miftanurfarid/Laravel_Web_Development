@@ -1,7 +1,8 @@
-#roket {
+#gambarRoket {
     width: 150px;
 }
 
-#roketterbang {
+#teksRoket {
     color: red;
+    background-color: grey;
 }
