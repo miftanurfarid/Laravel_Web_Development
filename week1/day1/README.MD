@@ -4,17 +4,21 @@
 2. Bagi yang belum belajar sama sekali jangan khawatir, secara perlahan nanti akan dikenalkan dengan beberapa tag pada HTML.
 3. Hari ini kita akan belajar melalui channel youtube Sekolah Koding. Penjelasan dari Kak Hilman Ramadhan di video-video Sekolah Koding sangat mudah dimengerti terutama bagi pemula.
    
-   Berikut ini playlist materi HTML dari Sekolah Koding: https://www.youtube.com/playlist?list=PLCZlgfAG0GXC9ojTmU95BRefbJoi4clY-
+   Berikut ini playlist materi HTML dari Sekolah Koding:
+   
+   https://www.youtube.com/playlist?list=PLCZlgfAG0GXC9ojTmU95BRefbJoi4clY-
 
 4. Saran dalam berlatih menggunakan tutorial: sambil ditonton bisa sambil dicoba code nya, jangan menunggu seluruh playlistnya selesai baru coba coding.
 
     Ingat bahwa coding itu untuk dicoba dan dipraktekkan, biar tangan-tangannya luwes dan lincah ketemu keyboard 👍
     
-5. Jika sudah menonton video sambil mencoba coding nya, coba kerjakan challenge berikut: https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-1-berlatih-html/
+5. Jika sudah menonton video sambil mencoba coding nya, coba kerjakan challenge berikut:
+   
+   https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-1-berlatih-html/
 
     Baca instruksi soalnya terlebih dahulu jika ada yang kurang dimengerti bisa didiskusikan di grup.
 
-    Password: IMLaravelAgustus2020HTML
+    Password: `IMLaravelAgustus2020HTML`
 
 6. Pengumpulan tugas HTML yaitu dengan langkah-langkah berikut: 
    1. upload file pengerjaan mu ke google drive. jika file nya banyak maka jadikan sebuah folder lalu upload ke drive.
@@ -25,13 +29,13 @@
     
     https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/
 
-    password: IMLaravelAgustus2020HTML
+    password: `IMLaravelAgustus2020HTML`
 
-8. Jika ada pertanyaan silakan ajukan di grup diskusi dengan tagar `#tanyaHTML`.
+8.  Jika ada pertanyaan silakan ajukan di grup diskusi dengan tagar `#tanyaHTML`.
    
    Selamat Belajar, Sanbers!
 
-9. Batas Pengumpulan Tugas Harian : 24 Jam setelah tugas diberikan. Untuk tugas HTML hari ini berarti terakhir dikumpulkan besok jam 09.30.
+11. Batas Pengumpulan Tugas Harian : 24 Jam setelah tugas diberikan. Untuk tugas HTML hari ini berarti terakhir dikumpulkan besok jam 09.30.
 
 ## TIPS
 
