@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- character set -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Halo Arkademian!</title>
+</head>
+<body>
+    <!-- Menu web -->
+    <div>
+        <!-- tambah entities &nbsp, non breaking space -->
+        <a href="../index.html">&nbsp HOME &nbsp</a> 
+        <a href="kontak.html">&nbsp KONTAK &nbsp</a>
+    </div>
+
+    <!-- Bagian judul -->
+    <div>
+        <h1>Kontak Arkademy!</h1>
+        <h2>Belajar mudah dan menyenangkan</h2>
+        <h3>HTML penting untuk dipelajari karena<br><span>bahan dasar</span> <div>dari web!</div></h3>
+    </div>
+
+    <!-- Membuat form -->
+    <form>
+        <fieldset>
+            <legend>Form Utama</legend>
+            <label for="nama">Nama Lengkap</label>
+            <!-- field input -->
+            <!-- text -->
+            <input type="text" placeholder="Nama Di sini" id="nama">  
+            <br>
+            <label for="pesan">Pesan Anda</label>
+            <!-- text area -->
+            <textarea cols="30" rows="10" placeholder="Pesan sini ya" id="pesan"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Info Tambahan</legend>
+            <label>Bahasa pemrograman yang dikuasai</label>
+            <input type="checkbox" name="bhs_pmrgmn" value="html" checked> HTML
+            <input type="checkbox" name="bhs_pmrgmn" value="css"> CSS
+            <input type="checkbox" name="bhs_pmrgmn" value="js"> JS
+            <input type="checkbox" name="bhs_pmrgmn" value="php"> PHP
+
+            <br>
+
+            <label>Jenis kelamin</label>
+            <input type="radio" name="gender" value="L" checked> Laki-laki
+            <input type="radio" name="gender" value="P"> Perempuan
+
+            <br>
+            <!-- Select and Form -->
+            <label>Domisili</label>
+            <select name="domisili">
+                <optgroup label="Jawa Timur">
+                    <option value="sby">Surabaya</option>
+                    <option value="mlg">Malang</option>
+                </optgroup>
+                <optgroup label="Jawa Tengah">
+                    <option value="cepu">Cepu</option>
+                    <option value="blora">Blora</option>
+                </optgroup>
+            </select>
+        </fieldset> 
+
+        <input type="submit" value="Kirim Data">
+    </form>
+    
+    <br>
+    <br>
+
+    <!-- Membuat table -->
+    <table border="1">
+        <caption>Data kontak arkademian</caption>
+        <!-- table row -->
+        <tr>
+            <!-- table head -->
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+        </tr>
+            <!-- table data -->
+        <tr>
+            <td>1</td>
+            <td>Bambang</td>
+            <td>Laki-laki</td>
+        </tr>
+    </table>
+
+    <!-- Membuat list -->
+    <!-- unordered list -->
+    <ul>
+        <li>Bambang</li>
+        <li>Joko</li>
+        <li>Widodo</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>
+        <li>Bambang</li>
+        <li>Joko</li>
+        <li>Widodo</li>
+    </ol>
+
+    <!-- data list -->
+    <dl>
+        <dt>Bambang</dt>
+        <dd>Pengguna dengan nama Bambang</dd>
+
+        <dt>Joko</dt>
+        <dd>Pengguna dengan nama Joko</dd>
+
+        <dt>Widodo</dt>
+        <dd>Pengguna dengan nama Widodo</dd>
+    </dl>
+
+    <!-- symbol -->
+    <p>&copy Copyright Bambang</p>
+</body>
+</html>
