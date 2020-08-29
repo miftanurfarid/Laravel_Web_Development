@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Belajar DOM Javascript</title>
+</head>
+<body>
+    <h1>Belajar Document Object Model (DOM) Javascript</h1>
+    <center> <img id="roket" src="img/roket.png" alt=""> </center>
+
+    <div id="box1"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <!-- Menambah Elemen -->
+    <div id="box2">
+        <h1>Di bawah ini kita akan menambahkan elemen h2 melalui java script kemudian kita tambahkan teks ke dalam elemen h2 tersebut</h1>
+        <!-- Mengganti elemen dengan elemen baru -->
+        <p id="p1">Paragraf ini akan digantikan secara otomatis dengan h3</p>
+    </div>
+
+    <!-- Menambahkan atribut -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript Jos</li>
+    </ul>
+
+    <div id="jawaban">
+        <p class="text-test">Ujian</p>
+        <p class="text-test">Pekanan</p>
+        <p class="text-test">Sanbercode</p>
+    </div>
+    <script>
+        document.getElementsByClassName('text-test')[1].innerHTML = 'Quiz 1'
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
