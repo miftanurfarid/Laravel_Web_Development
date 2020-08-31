@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/ -->
+<html lang="id-ID" class="html-has-lrm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="">
+<link rel="pingback" href="https://blog.sanbercode.com/xmlrpc.php">
+
+<title>Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog">
+<meta property="og:url" content="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">
+<meta property="og:site_name" content="SanberCode Blog">
+<meta property="article:publisher" content="https://www.facebook.com/sanbercode">
+<meta property="og:image" content="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24.png">
+<meta property="og:image:secure_url" content="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog">
+<meta name="twitter:image" content="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24.png">
+<script async="" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/page.js"></script><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.sanbercode.com/#organization","name":"SanberCode","url":"https://blog.sanbercode.com/","sameAs":["https://www.facebook.com/sanbercode","https://www.instagram.com/sanbercode/"],"logo":{"@type":"ImageObject","@id":"https://blog.sanbercode.com/#logo","inLanguage":"id-ID","url":"https://blog.sanbercode.com/wp-content/uploads/2019/01/untitled.png","width":225,"height":33,"caption":"SanberCode"},"image":{"@id":"https://blog.sanbercode.com/#logo"}},{"@type":"WebSite","@id":"https://blog.sanbercode.com/#website","url":"https://blog.sanbercode.com/","name":"SanberCode Blog","inLanguage":"id-ID","description":"Ngoding Santai Berkualitas","publisher":{"@id":"https://blog.sanbercode.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://blog.sanbercode.com/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#primaryimage","inLanguage":"id-ID","url":"https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24.png","width":685,"height":452},{"@type":"WebPage","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#webpage","url":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/","name":"Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog","isPartOf":{"@id":"https://blog.sanbercode.com/#website"},"inLanguage":"id-ID","primaryImageOfPage":{"@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#primaryimage"},"datePublished":"2020-07-19T14:06:12+00:00","dateModified":"2020-08-31T02:00:41+00:00","potentialAction":[{"@type":"ReadAction","target":["https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Feed" href="https://blog.sanbercode.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Umpan Komentar" href="https://blog.sanbercode.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Hari 1 – PHP Dasar 1 (String dan Array) Umpan Komentar" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="lrm-modal-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/lrm-core-compiled.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-fonts-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-modal-skin-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/skin.css" type="text/css" media="all">
+<link rel="stylesheet" id="wedocs-styles-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="post-views-counter-frontend-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/frontend(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="passster-public-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/passster-public.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mundana-styles-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/theme.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="addtoany-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/addtoany.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="claps-applause-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/claps-applause.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_ii-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-fonticons-ii.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_fa-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-fonticons-fa.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_crop-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-crop.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_modal-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-modal.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_styles-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_profile-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-profile.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_account-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-account.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_misc-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-misc.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fileupload-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-fileupload.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_date-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/default.date.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_time-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/default.time.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_raty-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-raty.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_scrollbar-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/simplebar.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_tipsy-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-tipsy.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_responsive-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_default_css-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-old-default.css" type="text/css" media="all">
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/jquery.js" id="jquery-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/addtoany.min.js" id="addtoany-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/cookie.js" id="passster-cookie-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/captcha.js" id="passster-captcha-js"></script>
+<script type="text/javascript" id="passster-public-js-extra">
+/* <![CDATA[ */
+var ps_ajax = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","days":"1","use_cookie":"on","no_ajax":"off","nonce":"62b089f79f","post_id":"6518","captcha_error":"Sorry, your captcha solution was wrong.","recaptcha_key":"","shortcodes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/passster-public.min.js" id="passster-public-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-gdpr.min.js" id="um-gdpr-js"></script>
+<link rel="https://api.w.org/" href="https://blog.sanbercode.com/wp-json/"><link rel="alternate" type="application/json" href="https://blog.sanbercode.com/wp-json/wp/v2/docs/6518"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.sanbercode.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.sanbercode.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.5">
+<link rel="shortlink" href="https://blog.sanbercode.com/?p=6518">
+<link rel="alternate" type="application/json+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-2-materi%2Fday-1-php-dasar-1-string-dan-array%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-2-materi%2Fday-1-php-dasar-1-string-dan-array%2F&amp;format=xml">
+
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "Email",
+	Bookmark: "Bookmark",
+	ShowAll: "Show all",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via email",
+	SubscribeViaEmail: "Subscribe via email",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Add to your favorites",
+	SendFromWebOrProgram: "Send from any email address or email program",
+	EmailProgram: "Email program",
+	More: "More&#8230;",
+	ThanksForSharing: "Thanks for sharing!",
+	ThanksForFollowing: "Thanks for following!"
+};
+
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+		<style type="text/css">
+			.um_request_name {
+				display: none !important;
+			}
+		</style>
+			<style>
+		.passster-form {
+			background: #F9F9F9;
+			padding: 10px;
+			margin: 0px;
+		}
+		.passster-form h4 {
+			font-size: 20px;
+			font-weight: 700;
+			color: #4998b3;
+		}
+		.passster-form p {
+			font-size: 14px;
+			font-weight: 400;
+			color: #000000;
+		}
+		.passster-submit, .passster-submit-recaptcha, .passster-submit-captcha {
+			color: #FFFFFF !important;
+			background: #4998b3 !important;
+		}
+		.passster-submit:hover, .passster-submit-recaptcha:hover, .passster-submit-captcha:hover {
+			color: #FFFFFF !important;
+			background: #aa1100 !important;
+		}                
+		</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-32x32.png" sizes="32x32">
+<link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-180x180.png">
+<meta name="msapplication-TileImage" content="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-270x270.png">
+<style id="kirki-inline-styles">.mediumnavigation{background-color:#ffffff;}a, a:hover{color:#003366;}#comments a{color:#003366;}.comment-form input.submit, .lrm-form button, .lrm-form button[type=submit]{background-color:#003366;}.comment-form input.submit{border-color:#003366;}input[type="submit"], button, .btn-outline-success:hover{background-color:#003366;}.btn-outline-success, .btn-outline-success:hover{border-color:#003366;}.btn-outline-success{color:#003366;}.introjumbo.bglight{background-color:rgba(175,217,234,0.61);}.introjumbo.bglight, .introjumbo .secondfont{color:#222222;}footer.footer a{color:#1C9963;}body{font-size:1rem;line-height:1.6;color:#222222;}b, strong, .font-weight-bold, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:#222222;}.navbar-brand{font-size:1.65rem;letter-spacing:0px;color:#222222;}.nav-link,.dropdown-item{font-size:0.9rem;letter-spacing:0.1px;text-transform:uppercase;}.article-headline{font-family:Georgia;font-size:3.2rem;font-weight:400;line-height:1.15;color:#222222;}.article-post, #comments .comment-content{font-family:Lora;font-size:1.25rem;font-weight:400;line-height:1.72;color:#444444;}.article-post b, .article-post strong{font-family:Lora;font-weight:700;color:#222222;}.article-post em, .article-post blockquote{font-family:Lora;font-weight:400;font-style:italic;color:#222222;}.introjumbo h1{font-family:Georgia;font-size:2.4rem;font-weight:700;line-height:1.1;}.thesidebar .spanborder.h4{font-size:1.5em;}.widget-area .mc4wp-form{background-color:rgba(175,217,234,0.61);}.widget-area .mc4wp-form input[type="submit"]{background-color:#003366;}.widget-area .mc4wp-form, .mc4wp-form-fields h1, .mc4wp-form-fields h2, .mc4wp-form-fields h3, .mc4wp-form-fields h4, .mc4wp-form-fields h5, .mc4wp-form-fields h6{color:#222222;}@media (max-width: 1280px){.container{max-width:1070px;}}@font-face{font-display:swap;font-family:'Lora';font-style:italic;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFkqs.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787weuyJF.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:700;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJF.woff) format('woff');}</style></head> 
+    
+<body class="docs-template-default single single-docs postid-6518 has-lrm"> 
+        
+
+    
+ <style>
+.mediumnavigation {padding-top:15px; padding-bottom:15px;}
+.mediumnavigation.nav-up {padding-top:0;padding-bottom:0;}
+</style>           
+<header id="MagicMenu" class="navbar-light fixed-top navbar mediumnavigation">
+
+    
+<div class="container">
+       
+        <div class="d-lg-flex justify-content-between align-items-center brandrow w-100">
+            
+            <!-- Begin Logo --> 
+            <div class="logoarea">
+                                     <a class="blog-logo" href="https://blog.sanbercode.com/" rel="home"><img src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/untitled.png" alt="SanberCode Blog"></a>
+                                </div>
+            <!-- End Logo --> 
+            
+            
+        
+            <!-- Secondary Top Menu -->
+            
+                <div class="navbar-expand-lg  d-lg-flex align-items-center text-lg-right">
+                    
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#bs4navbar,#bs4navbartop" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menuclose">X</span>
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                 
+                    
+                <div id="bs4navbartop" class="collapse navbar-collapse"><ul id="menu-top-menu" class="navbar-nav w-100 d-lg-flex align-items-center"><li class="menu-item search align-self-center"><form action="https://blog.sanbercode.com/" class="search-form" autocomplete="off">
+				<div class="form-group has-feedback">
+						<input type="hidden" name="post_type" value="post">
+						<input type="text" class="form-control" name="s" placeholder="Type and hit enter...">
+						<i class="fa fa-search form-control-feedback"></i>
+				</div>
+		</form></li><li id="menu-item-813" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-813 nav-item"><a href="https://blog.sanbercode.com/" class="nav-link">Home</a></li>
+<li id="menu-item-863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-863 nav-item dropdown"><a href="https://blog.sanbercode.com/category/bootcamp/indonesia-mengoding/" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Dasar</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-reactjs/" class=" dropdown-item">Kurikulum React Js Web Frontend</a><a href="https://blog.sanbercode.com/docs/kurikulum-desain-grafis/" class=" dropdown-item">Kurikulum Desain Grafis</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/" class=" dropdown-item">Kurikulum Laravel Web Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-centos-wed-server-devops/" class=" dropdown-item">Kurikulum Centos Web Server – Devops</a><a href="https://blog.sanbercode.com/docs/kurikulum-wordpress-development/" class=" dropdown-item">Kurikulum WordPress Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science/" class=" dropdown-item">Kurikulum Python – Data Science</a><a href="https://blog.sanbercode.com/docs/kurikulum-react-native-mobile-apps-development/" class=" dropdown-item">Kurikulum React Native Mobile Apps Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-ui-ux-design/" class=" dropdown-item">Kurikulum UI/UX</a></div>
+</li>
+<li id="menu-item-6310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6310 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Lanjutan</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-react-native-lanjutan/" class=" dropdown-item">Kurikulum React Native Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development-lanjutan-2/" class=" dropdown-item">Kurikulum Laravel Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science-lanjutan/" class=" dropdown-item">Kurikulum Python Data Science Lanjutan</a></div>
+</li>
+<li id="menu-item-9878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9878 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Mitra</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/agile-development-using-scrum-agustus/" class=" dropdown-item">Kurikulum Agile Dev Using Scrum</a></div>
+</li>
+<li id="menu-item-821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821 nav-item"><a href="https://blog.sanbercode.com/contact/" class="nav-link">Contact</a></li>
+<li id="menu-item-926" class="nmr-logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-926 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Editor</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/login/" class=" dropdown-item">Login</a><a href="https://blog.sanbercode.com/register/" class=" dropdown-item">Register</a></div>
+</li>
+</ul></div>      
+                    
+                </div>
+             
+            <!-- Secondary Top Menu -->
+                    
+        </div>
+        
+    
+        <!-- Main Menu -->
+        <div class="navbar-expand-lg d-flex  align-items-center w-100">      
+            
+                   
+        </div>
+        <!-- Main Menu -->
+        
+            
+    </div>
+
+</header>
+    
+       
+<!-- Begin site-content
+================================================== -->
+    
+<div class="container site-content" style="margin-top: 72px;"> 
+   
+    <div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+    
+        <div class="wedocs-single-wrap">
+
+            
+                <div class="wedocs-sidebar wedocs-hide-mobile">
+    
+    <h3 class="widget-title">Kurikulum Laravel Web Development</h3>
+
+            <ul class="doc-nav-list">
+            <li class="page_item page-item-6500 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/">Pekan 1 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6508"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">Hari 1 – Berkenalan dengan HTML</a></li>
+	<li class="page_item page-item-6509"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-2-menghias-web-dengan-css/">Hari 2 – Menghias Web dengan CSS</a></li>
+	<li class="page_item page-item-6510"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-3-lebih-rapi-dengan-css-bootstrap/">Hari 3 – Lebih Rapi dengan CSS Bootstrap</a></li>
+	<li class="page_item page-item-6511"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-4-javascript-dasar/">Hari 4 – Javascript Dasar</a></li>
+	<li class="page_item page-item-6512"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6501 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/">Pekan 1 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6513"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-1-berlatih-html/">Hari 1 – Berlatih HTML</a></li>
+	<li class="page_item page-item-6514"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-2-berlatih-css/">Hari 2 – Berlatih CSS</a></li>
+	<li class="page_item page-item-6515"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-3-berlatih-css-bootstrap/">Hari 3 – Berlatih CSS Bootstrap</a></li>
+	<li class="page_item page-item-6516"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-4-javascript-dasar/">Hari 4 – Berlatih Javascript</a></li>
+	<li class="page_item page-item-6517"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6502 page_item_has_children current_page_ancestor current_page_parent wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/">Pekan 2 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6518 current_page_item"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/" aria-current="page">Hari 1 – PHP Dasar 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6521"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-2-php-dasar-2-function-looping-control-flow/">Hari 2 – PHP Dasar 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6522"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-3-command-line-dan-git/">Hari 3 – Command Line dan Git</a></li>
+	<li class="page_item page-item-6523"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6524"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-5-belajar-sql/">Hari 5 – Belajar SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6503 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/">Pekan 2 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6525"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-1-php-bagian-1-string-dan-array/">Hari 1 – PHP Bagian 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6526"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-2-php-bagian-2-function-looping-control-flow/">Hari 2 – PHP Bagian 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6527"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-3-command-line-dan-git/">Hari 3 – Berlatih PHP Bagian 3 (Upload ke Git)</a></li>
+	<li class="page_item page-item-6528"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6529"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-5-berlatih-sql/">Hari 5 – Berlatih SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6504 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/">Pekan 3 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6530"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-1-membuat-desain-erd-untuk-database/">Hari 1 – Membuat desain ERD untuk Database</a></li>
+	<li class="page_item page-item-6531"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-2-intro-laravel-instalasi-dan-membuat-web-statis/">Hari 2 – Intro Laravel (Instalasi dan Membuat Web Statis)</a></li>
+	<li class="page_item page-item-6532"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-3-membuat-template-dengan-blade-laravel/">Hari 3 – Membuat Template dengan Blade Laravel</a></li>
+	<li class="page_item page-item-6533"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">Hari 4 – Database &amp; Migration di Laravel</a></li>
+	<li class="page_item page-item-6534"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-5-laravel-crud-create-read-update-delete/">Hari 5 – Laravel CRUD dengan Query Builder</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6505 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/">Pekan 3 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6535"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-1-desain-erd/">Hari 1 – Desain ERD</a></li>
+	<li class="page_item page-item-6536"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-2-membuat-web-statis-dengan-laravel/">Hari 2 – Membuat Web Statis dengan Laravel</a></li>
+	<li class="page_item page-item-6537"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-3-memasangkan-template-dengan-laravel-blade/">Hari 3 – Memasangkan Template dengan Laravel Blade</a></li>
+	<li class="page_item page-item-6538"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-4-mengatur-database-dengan-migration/">Hari 4 – Mengatur Database dengan Migration</a></li>
+	<li class="page_item page-item-6539"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-5-berlatih-crud-di-laravel/">Hari 5 – Berlatih CRUD di Laravel</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6506 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/">Pekan 4 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6543"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6542"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6548"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6507 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/">Pekan 4 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6549"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6550"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-laravel-auth-dan-middleware/">Hari 2 – Laravel Auth + Middleware</a></li>
+	<li class="page_item page-item-8866"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6551"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+	<li class="page_item page-item-6552"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-4-final-project/">Hari 4 – Final Project</a></li>
+	<li class="page_item page-item-6553"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-5-final-project/">Hari 5 – Final Project</a></li>
+</ul>
+</li>
+        </ul>
+    </div>
+
+            
+            <div class="wedocs-single-content">
+                <ol class="wedocs-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><li><i class="wedocs-icon wedocs-icon-home"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/">
+            <span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/wiki-sanbersy/">
+            <span itemprop="name">Docs</span></a>
+            <meta itemprop="position" content="2">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/">
+            <span itemprop="name">Kurikulum Laravel Web Development</span></a>
+            <meta itemprop="position" content="4">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/">
+            <span itemprop="name">Pekan 2 – Materi</span></a>
+            <meta itemprop="position" content="3">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li>  <li><span class="current">Hari 1 – PHP Dasar 1 (String dan Array)</span></li></ol>
+                <article id="post-6518" class="post-6518 docs type-docs status-publish hentry" itemscope="" itemtype="http://schema.org/Article">
+                    <header class="entry-header">
+                        <h1 class="entry-title" itemprop="headline">Hari 1 – PHP Dasar 1 (String dan Array)</h1>
+                                            </header><!-- .entry-header -->
+
+                    <div class="entry-content" itemprop="articleBody">
+                        
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Apa itu PHP?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sebuah web yang kita telusuri sehari-hari di internet dapat kita lihat sebagai penggabungan dua sisi yaitu sisi klien dan sisi server. Sisi klien adalah yang terlihat secara langsung oleh pengguna sehingga kaitannya erat dengan tampilan semisal HTML, CSS danJavascript. Sisi server merupakan bagian website yang tidak tampil ke pengguna, namun bagian ini lah yang mengolah logika bisnis dan data yang ditampilkan sehingga membuat website tersebut lebih dinamis. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PHP merupakan bahasa pemrograman yang berjalan di sisi server. Saat ini PHP masih populer dalam dunia pengembangan website karena komunitasnya yang sangat banyak di penjuru dunia. Penggunaan PHP dalam pengembangan web juga tergolong mudah karena sudah banyak tersedia hosting yang terjangkau dengan pengaturan yang familiar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Mempersiapkan PHP</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sebelum mulai untuk menggunakan PHP kita persiapkan terlebih dahulu <em>environment</em> yang dibutuhkan di antaranya: Apache, MySql, PHP, dan Perl. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Apache adalah web server agar seolah-olah PC/laptop kita menjadi server lokal. Mysql akan digunakan sebagai database, sedangkan PHP adalah bahasa pemrograman yang akan dipakai untuk membangun web, terakhir Perl membantu agar server dapat menjalankan PHP. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Untuk menginstall semuanya tidak perlu diinstall terpisah satu per satu, kita dapat menginstall aplikasi yang <em>all-in-one</em> seperti XAMPP, WAMPP, LAMPP atau MAMP. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pilihlah aplikasi yang sesuai dengan Sistem Operasi yang kita pakai: </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Windows : <a href="https://www.apachefriends.org/download.html">XAMPP </a>atau <a href="https://www.wampserver.com/en/#download-wrapper">WAMP</a></li><li>Mac OS : <a href="https://www.mamp.info/en/downloads/">MAMP </a>atau <a href="https://www.apachefriends.org/download.html">XAMPP</a></li><li>Linux : <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04">LAMPP</a></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Ikuti perintah instalasi sampai selesai, jika ada kendala pada saat instalasi kita dapat mencari solusi lewat Google.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Nyalakan XAMPP</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ketika sudah selesai menginstall XAMPP, buka aplikasi Xampp lalu akan tampil panel seperti berikut</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4302,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="685" height="452" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/image-24.png" alt="" class="wp-image-4302" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24.png 685w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-24-300x198.png 300w" sizes="(max-width: 685px) 100vw, 685px"><figcaption>tampilan XAMPP</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>nyalakan module Apache dan Mysql dengan cara menge-klik tombol start pada panel. Jika tidak terdapat error, maka kita dapat mengecek ke browser lalu buka alamat url <code>localhost</code> . Tampilan localhost pertama kali akan menunjukkan seperti berikut</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4303,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="556" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/image-25-1024x556.png" alt="" class="wp-image-4303" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-25-1024x556.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-25-300x163.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-25-768x417.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-25-1536x835.png 1536w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-25.png 1581w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>ketika diketikkan url localhost maka akan langsung diarahkan ke localhost/dashboard yaitu halaman dasbor xampp localhost</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Folder htdocs</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pada folder instalasi XAMPP , WAMP atau MAMP terdapat folder htdocs. Lokasi nya biasanya dapat kita akses ke <code>C:/xampp/htdocs</code> .</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4304,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="332" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/image-26-1024x332.png" alt="" class="wp-image-4304" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-26-1024x332.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-26-300x97.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-26-768x249.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-26.png 1478w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>folder htdocs</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Di dalam folder htdocs ini adalah tempat kita dapat membuat direktori folder yang berisi project-project PHP. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Misalkan kita buat satu folder di dalam htdocs dengan nama <code>berlatih-php</code>. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4305,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="464" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/image-27-1024x464.png" alt="" class="wp-image-4305" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-27-1024x464.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-27-300x136.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-27-768x348.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-27.png 1531w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Di dalam folder berlatih-php, buatlah satu file <code>index.php</code> lalu tulislah code seperti berikut</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4308,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="563" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/helloPHP-1024x563.png" alt="" class="wp-image-4308" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/helloPHP-1024x563.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/helloPHP-300x165.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/helloPHP-768x422.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/helloPHP-1536x845.png 1536w, https://blog.sanbercode.com/wp-content/uploads/2020/06/helloPHP.png 1596w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>index.php</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>maka dengan begitu kita mempunyai halaman baru di localhost yang dapat kita akses dengan menempatkan alamat url : localhost/berlatih-html</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4309,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="496" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/image-30-1024x496.png" alt="" class="wp-image-4309" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/image-30-1024x496.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-30-300x145.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-30-768x372.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-30-1536x743.png 1536w, https://blog.sanbercode.com/wp-content/uploads/2020/06/image-30.png 1593w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>halaman berlatih-php yang menampilkan index.php</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2>Mulai Menulis PHP</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Sintaks </h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sintaks PHP ditulis di dalam tag <code>php</code> seperti berikut: </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4310,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="834" height="438" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/sintaksPHP.png" alt="" class="wp-image-4310" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/sintaksPHP.png 834w, https://blog.sanbercode.com/wp-content/uploads/2020/06/sintaksPHP-300x158.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/sintaksPHP-768x403.png 768w" sizes="(max-width: 834px) 100vw, 834px"><figcaption>tag php untuk mulai menulis code PHP</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Tag Komentar</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tag Komentar dipakai untuk menandai judul atau bagian dari kode yang sedang ditulis, hal ini membantu penulis kode agar mudah mencari kembali bagian-bagian kode tertentu. Cara menulis komentar yaitu dengan membubuhkan <code>//</code> untuk komentar satu baris, dan <code>/* */</code> untuk komentar lebih dari satu baris.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4311,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="682" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/komentar-PHP-1024x682.png" alt="" class="wp-image-4311" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/komentar-PHP-1024x682.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/komentar-PHP-300x200.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/komentar-PHP-768x512.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/komentar-PHP.png 1264w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>tag komentar PHP</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Variabel dan titik koma ;</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Untuk menulis satu variabel di dalam PHP digunakan tanda <code>$</code> . Aturannya adalah </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>tidak boleh menggunakan angka di depan nama variabel tapi boleh menggunakan angka di tempat lain.  </li><li> tidak boleh memuat spesial karakter (~!@#$%. dan lain lain) </li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Setiap baris kode wajib menggunakan semikolon atau titik koma di akhir baris kode.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4313,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="533" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/variabelPHP-1024x533.png" alt="" class="wp-image-4313" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/06/variabelPHP-1024x533.png 1024w, https://blog.sanbercode.com/wp-content/uploads/2020/06/variabelPHP-300x156.png 300w, https://blog.sanbercode.com/wp-content/uploads/2020/06/variabelPHP-768x400.png 768w, https://blog.sanbercode.com/wp-content/uploads/2020/06/variabelPHP.png 1264w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
+<h4>Output Standar</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Kita akan sering menampilkan output dari kode yang kita buat ke halaman browser. Terdapat beberapa pilihan sintaks untuk menampilkan output yaitu echo, print, print_r, dan var_dump. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $hello ="Hello World!";
+  // echo
+  echo $hello;
+  
+  // print
+  print $hello;
+  
+  // print_r
+  print_r($hello);
+
+  // var_dump
+  var_dump($hello);
+
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>untuk menampilkan output berupa tipe data string biasanya digunakan <code>echo</code> atau <code>print</code> . Sedangkan <code>print_r</code> dapat juga digunakan untuk menampilkan tipe data array. var_dump akan menampilkan output berupa nilai dari yang ingin ditampilkan dilengkapi dengan informasi berupa tipe data dan panjang data. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Tipe Data String </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tipe data String yaitu tipe data yang berisi karakter-karakter dan biasa ditandai dengan pasangan tanda petik ganda (” “) atau tanda petik tunggal (‘ ‘).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $sapa = "Halo Guys!"
+  $hello = 'Hello World!'
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>pada tipe data string terdapat metode yang melekat padanya. kita akan membahas beberapa di antara metode string.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>strlen </h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode strlen dipakai untuk mengetahui panjang dari sebuah string : <br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $jargon = "Tetap Santai dan Berkualitas";
+  // akan menampilkan panjang variabel $jargon yaitu 28 karakter
+  echo strlen($jargon); 
+  
+  // akan menampilkan panjang string 11
+  echo strlen("Halo semua!")
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>strcmp</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode strcmp digunakan untuk membandingkan kesamaan di antara dua variabel string. output dari metode ini yaitu berupa tipe data logika boolean (true atau false). </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+$passwordasli = "b3laj@rpHP";
+$passwordinput = "belajarPHP";
+$cocok = strcmp($passwordasli, $password);
+if ($cocok != 1)
+  {
+    echo "Password anda salah!";
+  }
+else
+  {
+    echo "Password anda benar.";
+  }
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>boolean di PHP</p><cite>booelan di PHP yaitu true dan false bisa juga ditulis dengan integer 1 untuk true, integer 0 untuk false</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3>strtoupper</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode strtoupper digunakan untuk membuat sebuah string menjadi ditulis ke dalam karakter kapital. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $statement = "ini gak marah, cuman caps";
+  
+  // menampilkan INI GAK MARAH, CUMAN CAPS
+  echo strtoupper($statement);</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>strtolower</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode strtolwer kebalikan dari strtoupper yaitu membuat suatu string ditulis menjadi karakter-karakter non-kapital. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $marah = "INI MARAH";
+  
+  // menampilkan ini marah
+  echo strtolower($marah);</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>strpos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode strpos untuk mengakses suatu karakter atau kumpulan karakter tertentu pada string. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $kalimat = "Saya sedang belajar PHP";
+  $katayangdicari = "PHP";
+  $posisi = strpos($kalimat, $katayangdicari);
+  echo $posisi;
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>substr</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode substr untuk mengambil beberapa karakter pada string. menerima 3 parameter (&lt;string yang ingin dipotong&gt;, &lt;indeks mulai potong&gt;, &lt;panjang yang ingin dipotong&gt;). </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>indeks mulai potong dapat bernilai minus yang berarti mulai indeks dari karakter paling belakang.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+$string = "Saya suka PHP";
+
+// akan menampilkan suka PHP
+echo substr($string, 6, 4);
+
+// akan menampilkan PH
+echo substr($string, -3, 2); 
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading -->
+<h2>Tipe Data Array</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>tipe data array adalah tipe data yang mampu menampung lebih dari satu data. Elemen dari array ditandai dengan indeks agar dapat diakses. indeks array selalu diawali dengan indeks 0.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Deklarasi Array</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>membuat array baru dengan cara seperti berikut:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  
+  $siswa = array("regi", "bobby", "ahmad");
+  print_r($siswa);
+
+  $trainer = ["abduh", "aghnat", "yoga"];
+  print_r($trainer];
+
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>ingat! untuk menampilkan array ke output gunakan sintaks print_r.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Mengakses Elemen Array</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>untuk mengakses elemen pada array kita dapat arahkan dengan menunjuk indeks elemen yang kita inginkan:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+$nilai = [12, 14, 19];
+// akan menampilkan 12 yang merupakan elemen array indeks ke 0
+echo $nilai[0];
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Menambahkan elemen baru pada array</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>terkadang kita ingin menambahkan isi dari array dengan suatu data. caranya adalah dengan <code>$array[] = &lt;data yang ingin ditambahkan&gt;</code></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+  $siswa = array("regi", "bobby", "ahmad");
+  // siswa awal sebelum ditambah
+  print_r($siswa);
+  $siswa[] = "putri";
+  // menampilkan siswa setelah ditambah data baru "putri"
+  print_r($siswa);
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>jika data yang ingin ditambahkan lebih dari satu data, kita bisa gunakan metode array_push(). berikut ini</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+$stack = array("orange", "banana");
+array_push($stack, "apple", "raspberry");
+print_r($stack);
+?&gt;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>count() untuk menghitung panjang array</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>metode count digunakan untuk menghitung panjang dari sebuah array.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+$keranjang = ["pisang", "apel", "mangga"];
+// menampilkan panjang array $keranjang
+echo count($keranjang);
+</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Array Asosiatif</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Array Asosiatif adalah tipe array yang dapat menyimpan banyak data sebagai pasangan key dan value. Berbeda dengan array biasa yang menggunakan angka untuk menandai indeks, array asosiatif menggunakan key sebagai indeks yang dapat kita set sendiri. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>penulisan array asosiatif yaitu dengan memasangkan key dan value dengan pemisah tanda panah <code>=&gt;</code> .</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Contohnya sebagai berikut</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>&lt;?php
+
+$siswa1 = [ "nama" =&gt; "abduh"
+            "kelas" =&gt; "laravel"
+            "nilai" =&gt; 70
+          ];
+print_r($siswa1);
+
+// menambahkan key value baru ke array $siswa1
+$siswa1["email"] = "abduh@mail.com";
+
+print_r($siswa1);</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Video Tutorial PHP</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>beberapa tutorial yang dapat kita ikuti bersama untuk belajar PHP:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Playlist Sekolah Koding (Intro PHP, string dan Array) : <a href="https://www.youtube.com/playlist?list=PLdMopq3Lfhpdfgo91tsv3MfhXXbNLQBV3">link video</a></li><li>Playlist WPU Belajar PHP untuk Pemula: <a href="https://www.youtube.com/playlist?list=PLFIM0718LjIUqXfmEIBE3-uzERZPh3vp6">link video</a></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Dokumentasi PHP resmi</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Metode string :  <a href="https://www.php.net/manual/en/ref.strings.php">https://www.php.net/manual/en/ref.strings.php</a>  </li><li>Metode array :  <a href="https://www.php.net/manual/en/ref.array.php">https://www.php.net/manual/en/ref.array.php</a> </li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p></p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer wedocs-entry-footer">
+                        
+                        <div class="wedocs-article-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="rezky putra">
+                            <meta itemprop="url" content="https://blog.sanbercode.com/author/rezky25/">
+                        </div>
+
+                        <meta itemprop="datePublished" content="2020-07-19T21:06:12+07:00">
+                        <time itemprop="dateModified" datetime="2020-08-31T09:00:41+07:00">Updated on Agustus 31, 2020</time>
+                    </footer>
+
+                    <nav class="wedocs-doc-nav wedocs-hide-print"><h3 class="assistive-text screen-reader-text">Doc navigation</h3><span class="nav-next"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-2-php-dasar-2-function-looping-control-flow/">Hari 2 - PHP Dasar 2 (Function, Looping, Control Flow) →</a></span></nav>
+                    
+                    
+                    
+                </article><!-- #post-## -->
+            </div><!-- .wedocs-single-content -->
+        </div><!-- .wedocs-single-wrap -->
+
+    
+    </main><!-- .site-main --></div><!-- .content-area -->
+</div> <!-- / end container site-content -->
+
+<a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/" class="back-to-top"> 
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<div class="container text-center text-md-left">
+<footer class="footer text-muted d-md-flex justify-content-between align-items-center pt-4 pb-4 border-top" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo"> 
+    <div> © Copyright by SanberCode  </div> 
+    <div class="text-md-right"> Powered by <a target="_blank" href="https://sanbersy.com/">PT Sanbersy</a> </div>
+</footer>
+</div>
+
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/"
+        },
+        "headline": "Hari 1 &#8211; PHP Dasar 1 (String dan Array)",
+        "description": "",
+        "datePublished": "Juli 19, 2020",
+        "dateModified": "Agustus 31, 2020",
+        "image": {
+            "@type": "ImageObject",
+
+                        "url": "",
+            
+            "height": ,
+            "width":         },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SanberCode Blog",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced.png",
+                "height": 60,
+                "width": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "rezky putra",
+            "sameAs": [
+                                "https://www.facebook.com/sanbercode",                                                                             ]
+        }
+    }
+</script>
+ 
+
+<style>/* LRM */
+body.logged-in .lrm-hide-if-logged-in { display: none !important; }
+body.logged-in [class*='lrm-hide-if-logged-in'] { display: none !important; }
+body:not(.logged-in) .lrm-show-if-logged-in { display: none !important; }
+body:not(.logged-in) [class*='lrm-show-if-logged-in'] { display: none !important; }
+</style>
+<!--
+-->
+<div class="lrm-main lrm-font-svg lrm-user-modal lrm-btn-style--default" style="visibility: hidden;"> <!-- this is the entire modal form, including the background -->
+<!--<div class="lrm-user-modal" style="visibility: hidden;">  this is the entire modal form, including the background -->
+
+    <div class="lrm-user-modal-container"> <!-- this is the container wrapper -->
+        <div class="lrm-user-modal-container-inner"> <!-- this is the container wrapper -->
+
+            <ul class="lrm-switcher -is-not-login-only">
+
+	<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" class="lrm-switch-to-link lrm-switch-to--login lrm-ficon-login ">
+			Sign in		</a></li>
+
+			<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" class="lrm-switch-to-link lrm-switch-to--register lrm-ficon-register ">
+				New account			</a></li>
+	</ul><div class="lrm-signin-section "> <!-- log in form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" data-action="login">
+        <div class="lrm-fieldset-wrap">
+
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+
+            <p class="lrm-form-message lrm-form-message--init"></p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input name="username" class="full-width has-padding has-border" type="text" aria-label="Email or Username" placeholder="Email or Username" required="" value="" autocomplete="off" data-autofocus="1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-password lrm-ficon-key" title="Password"></label>
+                <input name="password" class="full-width has-padding has-border" type="password" aria-label="Password" placeholder="Password" required="" value="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+                                    <span class="hide-password lrm-ficon-eye" data-show="Show" data-hide="Hide" aria-label="Show"></span>
+                            </div>
+
+            <div class="fieldset">
+                                    <label class="lrm-nice-checkbox__label lrm-remember-me-checkbox">Remember me                        <input type="checkbox" class="lrm-nice-checkbox lrm-remember-me" name="remember-me" checked="">
+                        <div class="lrm-nice-checkbox__indicator"></div>
+                    </label>
+                            </div>
+
+            <div class="lrm-integrations lrm-integrations--login lrm-integrations-before-btn">
+                                            </div>
+
+            <div class="lrm-integrations-otp"></div>
+
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Log in			</button>
+		</div>
+
+        <div class="lrm-fieldset-wrap">
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+        </div>
+
+		<input type="hidden" name="redirect_to" value="">
+		<input type="hidden" name="lrm_action" value="login">
+		<input type="hidden" name="wp-submit" value="1">
+		<!-- Fix for Eduma WP theme-->
+		<input type="hidden" name="lp-ajax" value="login">
+
+		<input type="hidden" id="security-login" name="security-login" value="9e12b4098f"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" class="lrm-switch-to--reset-password">Forgot your password?</a></p>
+	<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+</div> <!-- lrm-login -->
+	<div class="lrm-signup-section "> <!-- sign up form -->
+		
+			<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" data-action="registration" data-lpignore="true">
+
+                <div class="lrm-fieldset-wrap lrm-form-message-wrap">
+                    <p class="lrm-form-message lrm-form-message--init"></p>
+                </div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                                                                        <div class="fieldset fieldset--username">
+                                                                <label class="image-replace lrm-username lrm-ficon-user" for="signup-username" title="Username*"></label>
+                                <input name="username" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username*" required="" aria-label="Username*" autocomplete="off" data-lpignore="true">
+                                <span class="lrm-error-message"></span>
+                            </div>
+                        
+                                                    <div class="clearfix lrm-row">
+                                                                                                <div class="lrm-col-half-width lrm-col-first fieldset--first-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-first-name" title="First name*"></label>
+                                    <input name="first-name" class="full-width has-padding has-border" id="signup-first-name" type="text" placeholder="First name*" required="" aria-label="First name*" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                                <div class="lrm-col-half-width lrm-col-last fieldset--last-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-last-name" title="Last name"></label>
+                                    <input name="last-name" class="full-width has-padding has-border" id="signup-last-name" type="text" placeholder="Last name" aria-label="Last name" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                            </div>
+                        
+                        <div class="fieldset fieldset--email">
+                                                        <label class="image-replace lrm-email lrm-ficon-mail" for="signup-email" title="Email*"></label>
+                            <input name="email" class="full-width has-padding has-border" id="signup-email" type="email" placeholder="Email*" required="" autocomplete="off" aria-label="Email*">
+                            <span class="lrm-error-message"></span>
+                        </div>
+
+                    
+                                                            
+                    
+                    <div class="lrm-integrations lrm-integrations--register">
+                                                                    </div>
+
+                                            <div class="fieldset fieldset--terms">
+
+                                                            <label class="lrm-nice-checkbox__label lrm-accept-terms-checkbox">I agree with the <a href="https://blog.sanbercode.com/terms">Terms</a>. <i>Edit this in Settings =&gt; Ajax Login Modal =&gt; Expressions tab =&gt; Registration section</i>                                    <input type="checkbox" class="lrm-nice-checkbox lrm-accept-terms" name="registration_terms" value="yes">
+                                    <span class="lrm-error-message"></span>
+                                    <div class="lrm-nice-checkbox__indicator"></div>
+                                </label>
+                            
+                        </div>
+                    
+                    <div class="lrm-integrations lrm-integrations--register lrm-info lrm-info--register">
+                                            </div>
+
+				</div>
+
+				<div class="fieldset fieldset--submit fieldset--default">
+					<button class="full-width has-padding" type="submit">
+						Create account					</button>
+				</div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                </div>
+
+				<input type="hidden" name="redirect_to" value="">
+				<input type="hidden" name="lrm_action" value="signup">
+				<input type="hidden" name="wp-submit" value="1">
+
+				<!-- Fix for Eduma WP theme-->
+				<input type="hidden" name="is_popup_register" value="1">
+				<input type="hidden" id="security-signup" name="security-signup" value="e5899124c4"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">				<!-- For Invisible Recaptcha plugin -->
+				<span class="wpcf7-submit" style="display: none;"></span>
+
+			</form>
+
+		
+		<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+	</div> <!-- lrm-signup -->
+
+<div class="lrm-reset-password-section "> <!-- reset password form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" data-action="lost-password">
+
+        <div class="lrm-fieldset-wrap">
+            <p class="lrm-form-message">Lost your password? Please enter your email address. You will receive mail with link to set new password.</p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input class="full-width has-padding has-border" name="user_login" type="text" required="" placeholder="Email or Username" data-autofocus="1" aria-label="Email or Username">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="lrm-integrations lrm-integrations--reset-pass">
+                            </div>
+
+            <input type="hidden" name="lrm_action" value="lostpassword">
+            <input type="hidden" name="wp-submit" value="1">
+            <input type="hidden" id="security-lostpassword" name="security-lostpassword" value="fe00f85006"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Reset password			</button>
+		</div>
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" class="lrm-switch-to--login">Back to login</a></p>
+</div> <!-- lrm-reset-password -->
+        </div> <!-- lrm-user-modal-container -->
+        <a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/#0" class="lrm-close-form" title="close">
+            <span class="lrm-ficon-close"></span>
+        </a>
+
+    </div> <!-- lrm-user-modal-container -->
+
+</div> <!-- lrm-user-modal -->
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div><link rel="stylesheet" id="so-css-mundana-css" href="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/so-css-mundana.css" type="text/css" media="all">
+<script type="text/javascript" id="lrm-modal-js-extra">
+/* <![CDATA[ */
+var LRM = {"password_zxcvbn_js_src":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/zxcvbn.min.js","allow_weak_password":"","password_strength_lib":null,"redirect_url":"","ajax_url":"https:\/\/blog.sanbercode.com\/?lrm=1","is_user_logged_in":"","reload_after_login":null,"selectors_mapping":{"login":"","register":""},"is_customize_preview":"","l10n":{"password_is_good":"Good Password","password_is_strong":"Strong Password","password_is_short":"Too Short Password","password_is_bad":"Bad Password","passwords_is_mismatch":"Passwords is mismatch!","passwords_is_weak":"Error: Your password is very weak!"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/lrm-core.js" id="lrm-modal-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/anchor.min.js" id="wedocs-anchorjs-js"></script>
+<script type="text/javascript" id="wedocs-scripts-js-extra">
+/* <![CDATA[ */
+var weDocs_Vars = {"ajaxurl":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","nonce":"16fc3aeffa","style":"https:\/\/blog.sanbercode.com\/wp-content\/plugins\/wedocs\/assets\/css\/print.css","powered":"\u00a9 SanberCode Blog, 2020. Powered by weDocs<br>https:\/\/blog.sanbercode.com"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/frontend.js" id="wedocs-scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/theme.min.js" id="mundana-scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/js.cookie.js" id="jquery-cookie-js"></script>
+<script type="text/javascript" id="wp-claps-applause-js-extra">
+/* <![CDATA[ */
+var clapsapplause = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","lovedText":"","loveText":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/claps-applause.js" id="wp-claps-applause-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/select2.full.min.js" id="select2-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/underscore.min.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/wp-util.min.js" id="wp-util-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-crop.min.js" id="um_crop-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-modal.min.js" id="um_modal-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-jquery-form.min.js" id="um_jquery_form-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-fileupload.min.js" id="um_fileupload-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/picker.js" id="um_datetime-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/picker.date.js" id="um_datetime_date-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/picker.time.js" id="um_datetime_time-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/legacy.js" id="um_datetime_legacy-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/id_ID.js" id="um_datetime_locale-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-raty.min.js" id="um_raty-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-tipsy.min.js" id="um_tipsy-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/jquery.masonry.min.js" id="jquery-masonry-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/simplebar.min.js" id="um_scrollbar-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-functions.min.js" id="um_functions-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-responsive.min.js" id="um_responsive-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-conditional.min.js" id="um_conditional-js"></script>
+<script type="text/javascript" id="um_scripts-js-extra">
+/* <![CDATA[ */
+var um_scripts = {"nonce":"ca3fdcc34a"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-scripts.min.js" id="um_scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-profile.min.js" id="um_profile-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/um-account.min.js" id="um_account-js"></script>
+<script type="text/javascript" src="./Hari 1 - PHP Dasar 1 (String dan Array) - SanberCode Blog_files/wp-embed.min.js" id="wp-embed-js"></script>
+		<script type="text/javascript">
+			jQuery( window ).on( 'load', function() {
+				jQuery('input[name="um_request"]').val('');
+			});
+		</script>
+	
+
+
+     
+
+</body></html>
