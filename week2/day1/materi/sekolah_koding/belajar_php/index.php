@@ -26,7 +26,7 @@
   <h2>Tipe Data Angka</h2>
   <?php
     // Tipe data angka atau number
-  
+
     $angka1 = 6;
     $angka2 = 3;
     $angka2 = 2;
@@ -48,6 +48,19 @@
                 );
     $data['nama'] = "Abu Zakariyya";
     print_r($data);
+  ?>
+
+  <h1>Multi Dimensi Array</h1>
+  <?php
+    $data = array(
+                  array("Programmer", "21", "Males"),
+                  array("Designer", "24", "Rajin"),
+                  array("Manager", "24", "Males Banget")
+                );
+
+    print_r($data);
+    echo $data[0][1];
+
   ?>
 </body>
 </html>
