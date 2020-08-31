@@ -73,11 +73,30 @@
 
         */
         $cast = array(
-                    array("Will Byers", 12, "Will the Wise", "Alive"),
-                    array("Mike Wheeler", 12, "Dungeon Master", "Alive"),
-                    array("Jim Hopper", 43, "Chief Hopper", "Deceased"),
-                    array("Eleven", 12, "El", "Alive")
-        );
+                    array(
+                      "Name"    => "Will Byers",
+                      "Age"     => 12,
+                      "Aliases" => "Will the Wise",
+                      "Status"  => "Alive"
+                    ),
+                    array(
+                      "Name"    => "Mike Wheeler",
+                      "Age"     => 12,
+                      "Aliases" => "Dungeon Master",
+                      "Status"  => "Alive"
+                    ),
+                    array(
+                      "Name"    => "Jim Hopper",
+                      "Age"     => 43,
+                      "Aliases" => "Chief Hopper",
+                      "Status"  => "Deceased"),
+                    array(
+                      "Name"    => "Eleven",
+                      "Age"     => 12,
+                      "Aliases" => "El",
+                      "Status"  => "Alive"
+                    )
+                  );
     ?>
 </body>
 </html>
