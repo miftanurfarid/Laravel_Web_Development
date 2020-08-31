@@ -15,8 +15,7 @@
             Tunjukan dengan menggunakan echo berapa panjang dari string yang diberikan berikut! Tunjukkan juga jumlah kata di dalam kalimat tersebut!
 
             Contoh:
-            $string = "PHP is never old";
-            Output:
+            $string = "PHP is never Output:
             Panjang string: 16,
             Jumlah kata: 4
         */
@@ -50,8 +49,8 @@
         echo "<label>String: </label> \"$string2\" <br>";
         echo "Kata pertama: " . substr($string2, 0, 1) . "<br>" ;
         // Lanjutkan di bawah ini
-        echo "Kata kedua: " ;
-        echo "<br> Kata Ketiga: " ;
+        echo "Kata kedua: " . substr($string2, 2, 4) . "<br>" ;
+        echo "Kata Ketiga: " . substr($string2, 7, 3) . "<br>" ;
 
         echo "<h3> Soal No 3 </h3>";
         /*
@@ -60,6 +59,7 @@
         */
         $string3 = "PHP is old but sexy!";
         echo "String: \"$string3\" ";
+        echo '<br>' . str_replace('sexy', 'awesome', $string3)
         // OUTPUT : "PHP is old but awesome"
 
     ?>
