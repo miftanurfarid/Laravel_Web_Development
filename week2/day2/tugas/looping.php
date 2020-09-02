@@ -67,10 +67,17 @@
         $numbers = [18, 45, 29, 61, 47, 34];
         echo "array numbers: ";
         print_r($numbers);
+
         // Lakukan Looping di sini
+        $rest = array_fill(0, 6,0);
+
+        for ($i=0; $i < count($numbers); $i++) {
+          $rest[$i] = $numbers[$i] % 5;
+        }
 
         echo "<br>";
-        echo "Array sisa baginya adalah:  ";
+        echo "Array sisa baginya adalah: ";
+        print_r($rest);
         echo "<br>";
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
@@ -93,6 +100,17 @@
             ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
         ];
 
+        for ($i=0; $i < count($items); $i++) {
+          $arrayName[$i] = array( 'id'          => $items[$i][0],
+                                  'name'        => $items[$i][1],
+                                  'price'       => $items[$i][2],
+                                  'description' => $items[$i][3],
+                                  'source'      => $items[$i][4],
+                                );
+        }
+
+        print_r($arrayName);
+
         // Output:
 
         echo "<h3>Soal No 4 Asterix </h3>";
@@ -108,6 +126,12 @@
             * * * * *
         */
         echo "Asterix: ";
+        for ($i=0; $i <= 5; $i++) {
+          for ($j=0; $j < $i; $j++) {
+              echo "* ";
+          }
+          echo "<br>";
+        }
         echo "<br>";
     ?>
 
