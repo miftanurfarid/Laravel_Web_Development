@@ -65,20 +65,15 @@
         */
 
         $numbers = [18, 45, 29, 61, 47, 34];
-        echo "array numbers: ";
-        print_r($numbers);
 
         // Lakukan Looping di sini
-        $rest = array_fill(0, 6,0);
-
+        $rest = array_fill(0,count($numbers),0);
+        
         for ($i=0; $i < count($numbers); $i++) {
+          echo "Array numbers: " . $numbers[$i] . "<br>";
           $rest[$i] = $numbers[$i] % 5;
+          echo "Array sisa baginya adalah: " . $rest[$i] . "<br><br>";
         }
-
-        echo "<br>";
-        echo "Array sisa baginya adalah: ";
-        print_r($rest);
-        echo "<br>";
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
         /*

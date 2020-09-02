@@ -20,13 +20,14 @@
             Output: "Halo Abduh, Selamat Datang di Sanbercode!"
         */
 
-        // Code function di sini
-
+        function greetings($nama) {
+            echo "Halo " . $nama . ", Selamat Datang di Sanbercode! <br>";
+        }
 
         // Hapus komentar untuk menjalankan code!
-        // greetings("Bagas");
-        // greetings("Wahyu");
-        // greetings("Abdul");
+        greetings("Bagas");
+        greetings("Wahyu");
+        greetings("Abdul");
 
         echo "<br>";
 
@@ -44,12 +45,30 @@
         */
 
         // Code function di sini
-
+        function reverseString($nama, $prt=1) {
+            $new_kata = array_fill(0,count($nama),0);
+            $kata = str_split($nama);
+            $counter = 0;
+            for ($i=count($kata)-1; $i >= 0; $i--) { 
+                if ($prt == 1) {
+                    echo $kata[$i];
+                }
+                else {
+                    $new_kata[$counter] = $kata[$i];
+                    // print_r($new_kata);
+                    // echo "<br>";
+                    $counter += 1;
+                }
+            }
+            echo "</b><br>";
+            $new_kata = implode( '', $new_kata );
+            return $new_kata;
+        }
 
         // Hapus komentar di bawah ini untuk jalankan Code
-        // reverseString("abduh");
-        // reverseString("Sanbercode");
-        // reverseString("We Are Sanbers Developers")
+        reverseString("abduh");
+        reverseString("Sanbercode");
+        reverseString("We Are Sanbers Developers");
         echo "<br>";
 
         echo "<h3>Soal No 3 Palindrome </h3>";
@@ -69,12 +88,23 @@
 
 
         // Code function di sini
-
+        function palindrome($kata) {
+            echo "Apakah kata '" . $kata . "' adalah <em>Palindrome</em> ? ";
+            $atak = reverseString($kata, 0);
+            $n = strcmp($atak, $kata);
+            if ($n == 0) {
+                echo "Jawaban: <em>True</em><br><br>";
+            }
+            else{
+                echo "Jawaban: <em>False</em><br><br>";
+            }
+        }
+        
         // Hapus komentar di bawah ini untuk jalankan code
-        // palindrome("civic") ; // true
-        // palindrome("nababan") ; // true
-        // palindrome("jambaban"); // false
-        // palindrome("racecar"); // true
+        palindrome("civic") ; // true
+        palindrome("nababan") ; // true
+        palindrome("jambaban"); // false
+        palindrome("racecar"); // true
     ?>
 </body>
 </html>
