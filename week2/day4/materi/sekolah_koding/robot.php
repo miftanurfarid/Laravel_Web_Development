@@ -31,11 +31,4 @@ class robot{
   }
 }
 
-// inheritance atau pewarisan
-class robot_hewan extends robot {
-
-  public function get_kekuatan() {
-    echo "saya hewan dahsyaat!<br>";
-  }
-}
 ?>
