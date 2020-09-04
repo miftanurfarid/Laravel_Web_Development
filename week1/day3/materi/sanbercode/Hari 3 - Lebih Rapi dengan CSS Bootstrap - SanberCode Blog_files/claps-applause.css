@@ -1,0 +1,75 @@
+/* 
+Plugin: WP Applause Button plugin
+Plugin URL: https://www.wowthemes.net/wowplugins/wp-claps-applause/
+SVG Created by Luis Durazo from the Noun Project
+*/
+
+.pt-claps-applause {
+	height: 60px;
+    line-height: 60px;
+    width: 60px;
+    padding: 0;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+	display:inline-block;
+	position:relative;
+	background:none;
+	outline: 1px solid transparent;
+	border-radius: 50%;
+	border: 1px solid #d2d2d2;
+	text-align: center;
+	transition: border-color 0.3s ease-in;
+}
+.pt-claps-applause:hover {
+	cursor: pointer;
+	border: 1px solid #27ae60;
+	transition: border-color 0.3s ease-in;
+}
+.pt-claps-applause .claps-count {
+	font-size: 13px;
+    position: relative;
+    margin-top: -113px;
+    margin-left: 0;
+    color: #bdc3c7;
+    display: block;
+    font-family: Tahoma;
+}
+.pt-claps-applause .claps-button {
+	display:block;
+	margin-top:7px;
+}
+.claps-button:before {	
+	content: url("svg/applaud.svg");
+}
+.pt-claps-applause.has_rated .claps-button:before {
+	content: url("svg/applaud-checked.svg");	
+}
+
+span.lovedit {
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    bottom: -45px;
+    left:0;
+    line-height: 1;
+	font-family:Tahoma;
+}
+span.lovedit:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 25%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #222 transparent;
+}
+.pt-claps-applause:hover span.lovedit {
+    visibility:visible;
+}
