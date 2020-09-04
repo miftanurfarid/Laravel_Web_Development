@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/ -->
+<html lang="id-ID" class="html-has-lrm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="">
+<link rel="pingback" href="https://blog.sanbercode.com/xmlrpc.php">
+
+<title>Hari 1 - Berkenalan dengan HTML - SanberCode Blog</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hari 1 - Berkenalan dengan HTML - SanberCode Blog">
+<meta property="og:url" content="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">
+<meta property="og:site_name" content="SanberCode Blog">
+<meta property="article:publisher" content="https://www.facebook.com/sanbercode">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hari 1 - Berkenalan dengan HTML - SanberCode Blog">
+<script async="" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/page.js"></script><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.sanbercode.com/#organization","name":"SanberCode","url":"https://blog.sanbercode.com/","sameAs":["https://www.facebook.com/sanbercode","https://www.instagram.com/sanbercode/"],"logo":{"@type":"ImageObject","@id":"https://blog.sanbercode.com/#logo","inLanguage":"id-ID","url":"https://blog.sanbercode.com/wp-content/uploads/2019/01/untitled.png","width":225,"height":33,"caption":"SanberCode"},"image":{"@id":"https://blog.sanbercode.com/#logo"}},{"@type":"WebSite","@id":"https://blog.sanbercode.com/#website","url":"https://blog.sanbercode.com/","name":"SanberCode Blog","inLanguage":"id-ID","description":"Ngoding Santai Berkualitas","publisher":{"@id":"https://blog.sanbercode.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://blog.sanbercode.com/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#primaryimage","inLanguage":"id-ID","url":"data:image/png;base64,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"},{"@type":"WebPage","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#webpage","url":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/","name":"Hari 1 - Berkenalan dengan HTML - SanberCode Blog","isPartOf":{"@id":"https://blog.sanbercode.com/#website"},"inLanguage":"id-ID","primaryImageOfPage":{"@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#primaryimage"},"datePublished":"2020-07-19T14:00:05+00:00","dateModified":"2020-08-25T02:23:12+00:00","potentialAction":[{"@type":"ReadAction","target":["https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Feed" href="https://blog.sanbercode.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Umpan Komentar" href="https://blog.sanbercode.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Hari 1 – Berkenalan dengan HTML Umpan Komentar" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style class="anchorjs"></style><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="lrm-modal-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/lrm-core-compiled.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-fonts-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-modal-skin-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/skin.css" type="text/css" media="all">
+<link rel="stylesheet" id="wedocs-styles-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="post-views-counter-frontend-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/frontend(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="passster-public-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/passster-public.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mundana-styles-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/theme.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="addtoany-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/addtoany.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="claps-applause-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/claps-applause.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_ii-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-fonticons-ii.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_fa-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-fonticons-fa.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_crop-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-crop.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_modal-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-modal.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_styles-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_profile-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-profile.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_account-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-account.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_misc-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-misc.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fileupload-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-fileupload.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_date-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/default.date.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_time-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/default.time.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_raty-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-raty.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_scrollbar-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/simplebar.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_tipsy-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-tipsy.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_responsive-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_default_css-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-old-default.css" type="text/css" media="all">
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/addtoany.min.js" id="addtoany-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/cookie.js" id="passster-cookie-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/captcha.js" id="passster-captcha-js"></script>
+<script type="text/javascript" id="passster-public-js-extra">
+/* <![CDATA[ */
+var ps_ajax = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","days":"1","use_cookie":"on","no_ajax":"off","nonce":"2fc7c483bd","post_id":"6508","captcha_error":"Sorry, your captcha solution was wrong.","recaptcha_key":"","shortcodes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/passster-public.min.js" id="passster-public-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-gdpr.min.js" id="um-gdpr-js"></script>
+<link rel="https://api.w.org/" href="https://blog.sanbercode.com/wp-json/"><link rel="alternate" type="application/json" href="https://blog.sanbercode.com/wp-json/wp/v2/docs/6508"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.sanbercode.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.sanbercode.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.5.1">
+<link rel="shortlink" href="https://blog.sanbercode.com/?p=6508">
+<link rel="alternate" type="application/json+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-1-materi%2Fhari-1-berkenalan-dengan-html%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-1-materi%2Fhari-1-berkenalan-dengan-html%2F&amp;format=xml">
+
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "Email",
+	Bookmark: "Bookmark",
+	ShowAll: "Show all",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via email",
+	SubscribeViaEmail: "Subscribe via email",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Add to your favorites",
+	SendFromWebOrProgram: "Send from any email address or email program",
+	EmailProgram: "Email program",
+	More: "More&#8230;",
+	ThanksForSharing: "Thanks for sharing!",
+	ThanksForFollowing: "Thanks for following!"
+};
+
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+		<style type="text/css">
+			.um_request_name {
+				display: none !important;
+			}
+		</style>
+			<style>
+		.passster-form {
+			background: #F9F9F9;
+			padding: 10px;
+			margin: 0px;
+		}
+		.passster-form h4 {
+			font-size: 20px;
+			font-weight: 700;
+			color: #4998b3;
+		}
+		.passster-form p {
+			font-size: 14px;
+			font-weight: 400;
+			color: #000000;
+		}
+		.passster-submit, .passster-submit-recaptcha, .passster-submit-captcha {
+			color: #FFFFFF !important;
+			background: #4998b3 !important;
+		}
+		.passster-submit:hover, .passster-submit-recaptcha:hover, .passster-submit-captcha:hover {
+			color: #FFFFFF !important;
+			background: #aa1100 !important;
+		}                
+		</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-32x32.png" sizes="32x32">
+<link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-180x180.png">
+<meta name="msapplication-TileImage" content="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-270x270.png">
+<style id="kirki-inline-styles">.mediumnavigation{background-color:#ffffff;}a, a:hover{color:#003366;}#comments a{color:#003366;}.comment-form input.submit, .lrm-form button, .lrm-form button[type=submit]{background-color:#003366;}.comment-form input.submit{border-color:#003366;}input[type="submit"], button, .btn-outline-success:hover{background-color:#003366;}.btn-outline-success, .btn-outline-success:hover{border-color:#003366;}.btn-outline-success{color:#003366;}.introjumbo.bglight{background-color:rgba(175,217,234,0.61);}.introjumbo.bglight, .introjumbo .secondfont{color:#222222;}footer.footer a{color:#1C9963;}body{font-size:1rem;line-height:1.6;color:#222222;}b, strong, .font-weight-bold, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:#222222;}.navbar-brand{font-size:1.65rem;letter-spacing:0px;color:#222222;}.nav-link,.dropdown-item{font-size:0.9rem;letter-spacing:0.1px;text-transform:uppercase;}.article-headline{font-family:Georgia;font-size:3.2rem;font-weight:400;line-height:1.15;color:#222222;}.article-post, #comments .comment-content{font-family:Lora;font-size:1.25rem;font-weight:400;line-height:1.72;color:#444444;}.article-post b, .article-post strong{font-family:Lora;font-weight:700;color:#222222;}.article-post em, .article-post blockquote{font-family:Lora;font-weight:400;font-style:italic;color:#222222;}.introjumbo h1{font-family:Georgia;font-size:2.4rem;font-weight:700;line-height:1.1;}.thesidebar .spanborder.h4{font-size:1.5em;}.widget-area .mc4wp-form{background-color:rgba(175,217,234,0.61);}.widget-area .mc4wp-form input[type="submit"]{background-color:#003366;}.widget-area .mc4wp-form, .mc4wp-form-fields h1, .mc4wp-form-fields h2, .mc4wp-form-fields h3, .mc4wp-form-fields h4, .mc4wp-form-fields h5, .mc4wp-form-fields h6{color:#222222;}@media (max-width: 1280px){.container{max-width:1070px;}}@font-face{font-display:swap;font-family:'Lora';font-style:italic;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFkqs.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787weuyJF.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:700;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJF.woff) format('woff');}</style></head> 
+    
+<body class="docs-template-default single single-docs postid-6508 has-lrm"> 
+        
+
+    
+ <style>
+.mediumnavigation {padding-top:15px; padding-bottom:15px;}
+.mediumnavigation.nav-up {padding-top:0;padding-bottom:0;}
+</style>           
+<header id="MagicMenu" class="navbar-light fixed-top navbar mediumnavigation nav-up" style="top: -42px;">
+
+    
+<div class="container">
+       
+        <div class="d-lg-flex justify-content-between align-items-center brandrow w-100">
+            
+            <!-- Begin Logo --> 
+            <div class="logoarea">
+                                     <a class="blog-logo" href="https://blog.sanbercode.com/" rel="home"><img src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/untitled.png" alt="SanberCode Blog"></a>
+                                </div>
+            <!-- End Logo --> 
+            
+            
+        
+            <!-- Secondary Top Menu -->
+            
+                <div class="navbar-expand-lg  d-lg-flex align-items-center text-lg-right">
+                    
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#bs4navbar,#bs4navbartop" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menuclose">X</span>
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                 
+                    
+                <div id="bs4navbartop" class="collapse navbar-collapse"><ul id="menu-top-menu" class="navbar-nav w-100 d-lg-flex align-items-center"><li class="menu-item search align-self-center"><form action="https://blog.sanbercode.com/" class="search-form" autocomplete="off">
+				<div class="form-group has-feedback">
+						<input type="hidden" name="post_type" value="post">
+						<input type="text" class="form-control" name="s" placeholder="Type and hit enter...">
+						<i class="fa fa-search form-control-feedback"></i>
+				</div>
+		</form></li><li id="menu-item-813" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-813 nav-item"><a href="https://blog.sanbercode.com/" class="nav-link">Home</a></li>
+<li id="menu-item-863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-863 nav-item dropdown"><a href="https://blog.sanbercode.com/category/bootcamp/indonesia-mengoding/" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Dasar</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-reactjs/" class=" dropdown-item">Kurikulum React Js Web Frontend</a><a href="https://blog.sanbercode.com/docs/kurikulum-desain-grafis/" class=" dropdown-item">Kurikulum Desain Grafis</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/" class=" dropdown-item">Kurikulum Laravel Web Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-centos-wed-server-devops/" class=" dropdown-item">Kurikulum Centos Web Server – Devops</a><a href="https://blog.sanbercode.com/docs/kurikulum-wordpress-development/" class=" dropdown-item">Kurikulum WordPress Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science/" class=" dropdown-item">Kurikulum Python – Data Science</a><a href="https://blog.sanbercode.com/docs/kurikulum-react-native-mobile-apps-development/" class=" dropdown-item">Kurikulum React Native Mobile Apps Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-ui-ux-design/" class=" dropdown-item">Kurikulum UI/UX</a></div>
+</li>
+<li id="menu-item-6310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6310 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Lanjutan</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-react-native-lanjutan/" class=" dropdown-item">Kurikulum React Native Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development-lanjutan-2/" class=" dropdown-item">Kurikulum Laravel Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science-lanjutan/" class=" dropdown-item">Kurikulum Python Data Science Lanjutan</a></div>
+</li>
+<li id="menu-item-9878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9878 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Mitra</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/agile-development-using-scrum-agustus/" class=" dropdown-item">Kurikulum Agile Dev Using Scrum</a></div>
+</li>
+<li id="menu-item-821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821 nav-item"><a href="https://blog.sanbercode.com/contact/" class="nav-link">Contact</a></li>
+<li id="menu-item-926" class="nmr-logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-926 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Editor</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/login/" class=" dropdown-item">Login</a><a href="https://blog.sanbercode.com/register/" class=" dropdown-item">Register</a></div>
+</li>
+</ul></div>      
+                    
+                </div>
+             
+            <!-- Secondary Top Menu -->
+                    
+        </div>
+        
+    
+        <!-- Main Menu -->
+        <div class="navbar-expand-lg d-flex  align-items-center w-100">      
+            
+                   
+        </div>
+        <!-- Main Menu -->
+        
+            
+    </div>
+
+</header>
+    
+       
+<!-- Begin site-content
+================================================== -->
+    
+<div class="container site-content" style="margin-top: 72px;"> 
+   
+    <div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+    
+        <div class="wedocs-single-wrap">
+
+            
+                <div class="wedocs-sidebar wedocs-hide-mobile">
+    
+    <h3 class="widget-title">Kurikulum Laravel Web Development</h3>
+
+            <ul class="doc-nav-list">
+            <li class="page_item page-item-6500 page_item_has_children current_page_ancestor current_page_parent wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/">Pekan 1 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6508 current_page_item"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/" aria-current="page">Hari 1 – Berkenalan dengan HTML</a></li>
+	<li class="page_item page-item-6509"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-2-menghias-web-dengan-css/">Hari 2 – Menghias Web dengan CSS</a></li>
+	<li class="page_item page-item-6510"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-3-lebih-rapi-dengan-css-bootstrap/">Hari 3 – Lebih Rapi dengan CSS Bootstrap</a></li>
+	<li class="page_item page-item-6511"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-4-javascript-dasar/">Hari 4 – Javascript Dasar</a></li>
+	<li class="page_item page-item-6512"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6501 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/">Pekan 1 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6513"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-1-berlatih-html/">Hari 1 – Berlatih HTML</a></li>
+	<li class="page_item page-item-6514"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-2-berlatih-css/">Hari 2 – Berlatih CSS</a></li>
+	<li class="page_item page-item-6515"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-3-berlatih-css-bootstrap/">Hari 3 – Berlatih CSS Bootstrap</a></li>
+	<li class="page_item page-item-6516"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-4-javascript-dasar/">Hari 4 – Berlatih Javascript</a></li>
+	<li class="page_item page-item-6517"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6502 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/">Pekan 2 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6518"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">Hari 1 – PHP Dasar 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6521"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-2-php-dasar-2-function-looping-control-flow/">Hari 2 – PHP Dasar 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6522"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-3-command-line-dan-git/">Hari 3 – Command Line dan Git</a></li>
+	<li class="page_item page-item-6523"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6524"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-5-belajar-sql/">Hari 5 – Belajar SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6503 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/">Pekan 2 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6525"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-1-php-bagian-1-string-dan-array/">Hari 1 – PHP Bagian 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6526"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-2-php-bagian-2-function-looping-control-flow/">Hari 2 – PHP Bagian 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6527"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-3-command-line-dan-git/">Hari 3 – Berlatih PHP Bagian 3 (Upload ke Git)</a></li>
+	<li class="page_item page-item-6528"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6529"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-5-berlatih-sql/">Hari 5 – Berlatih SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6504 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/">Pekan 3 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6530"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-1-membuat-desain-erd-untuk-database/">Hari 1 – Membuat desain ERD untuk Database</a></li>
+	<li class="page_item page-item-6531"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-2-intro-laravel-instalasi-dan-membuat-web-statis/">Hari 2 – Intro Laravel (Instalasi dan Membuat Web Statis)</a></li>
+	<li class="page_item page-item-6532"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-3-membuat-template-dengan-blade-laravel/">Hari 3 – Membuat Template dengan Blade Laravel</a></li>
+	<li class="page_item page-item-6533"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">Hari 4 – Database &amp; Migration di Laravel</a></li>
+	<li class="page_item page-item-6534"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-5-laravel-crud-create-read-update-delete/">Hari 5 – Laravel CRUD dengan Query Builder</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6505 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/">Pekan 3 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6535"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-1-desain-erd/">Hari 1 – Desain ERD</a></li>
+	<li class="page_item page-item-6536"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-2-membuat-web-statis-dengan-laravel/">Hari 2 – Membuat Web Statis dengan Laravel</a></li>
+	<li class="page_item page-item-6537"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-3-memasangkan-template-dengan-laravel-blade/">Hari 3 – Memasangkan Template dengan Laravel Blade</a></li>
+	<li class="page_item page-item-6538"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-4-mengatur-database-dengan-migration/">Hari 4 – Mengatur Database dengan Migration</a></li>
+	<li class="page_item page-item-6539"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-5-berlatih-crud-di-laravel/">Hari 5 – Berlatih CRUD di Laravel</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6506 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/">Pekan 4 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6543"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6542"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6548"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6507 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/">Pekan 4 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6549"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6550"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-laravel-auth-dan-middleware/">Hari 2 – Laravel Auth + Middleware</a></li>
+	<li class="page_item page-item-8866"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6551"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+	<li class="page_item page-item-6552"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-4-final-project/">Hari 4 – Final Project</a></li>
+	<li class="page_item page-item-6553"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-5-final-project/">Hari 5 – Final Project</a></li>
+</ul>
+</li>
+        </ul>
+    </div>
+
+            
+            <div class="wedocs-single-content">
+                <ol class="wedocs-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><li><i class="wedocs-icon wedocs-icon-home"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/">
+            <span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/wiki-sanbersy/">
+            <span itemprop="name">Docs</span></a>
+            <meta itemprop="position" content="2">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/">
+            <span itemprop="name">Kurikulum Laravel Web Development</span></a>
+            <meta itemprop="position" content="4">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/">
+            <span itemprop="name">Pekan 1 – Materi</span></a>
+            <meta itemprop="position" content="3">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li>  <li><span class="current">Hari 1 – Berkenalan dengan HTML</span></li></ol>
+                <article id="post-6508" class="post-6508 docs type-docs status-publish hentry" itemscope="" itemtype="http://schema.org/Article">
+                    <header class="entry-header">
+                        <h1 class="entry-title" itemprop="headline">Hari 1 – Berkenalan dengan HTML</h1>
+                                            </header><!-- .entry-header -->
+
+                    <div class="entry-content" itemprop="articleBody">
+                        
+<p></p>
+<h3 id="apa-itu-html">Apa itu HTML ?<a class="anchorjs-link " href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#apa-itu-html" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>HTML merupakan singkatan dari Hyper Text Markup Language. HTML adalah sebuah bahasa standar untuk pembuatan halaman web. Dengan adanya HTML, kita dapat membedakan struktur yang tersusun dari sebuah halaman melalui tag atau elemen-elemen penyusunnya. </p>
+<p>Elemen atau tag pada HTML dikenali oleh browser seperti google chrome, firefox atau Ms Edge, dll. Browser tersebut mengidentifikasi setiap elemen penyusun HTML dan ditampilkan sesuai karakteristik elemen tersebut. Contohnya sebuah elemen paragraph akan ditampilkan sebagai tulisan panjang, atau sebuah elemen pranala/link akan dicetak dengan warna biru dan ketika mouse mendekat kursornya berubah menjadi telunjuk, dsb.  </p>
+<p>Contoh sebuah halaman HTML sederhana: </p>
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Dari contoh di atas kita dapat mengidentifikasi elemen-elemen nya seperti berikut</p>
+<ul>
+<li>element <code>&lt;!DOCTYPE html</code>&gt; mengartikan bahwa dokumen ditulis dengan versi HTML5</li>
+<li>elemen <code>&lt;html&gt;</code> adalah elemen induk atau elemen utama yang sering disebut juga root element dari sebuah halaman HTML.</li>
+<li>elemen <code>&lt;head&gt;</code> berisi informasi tentang halaman HTML yang sedang dibuat</li>
+<li>elemen <code>&lt;title</code>&gt; adalah judul dari halaman HTML yang akan tampil di tab browser. </li>
+</ul>
+<h3 id="elemen-pada-html">Elemen pada HTML <a class="anchorjs-link " href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#elemen-pada-html" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></h3>
+<p>Elemen atau sering disebut dengan tag pada HTML adalah penyusun dari sebuah halaman web yang dapat dikenali oleh browser dan ditampilkan oleh browser sesuai karakteristik masing-masing. </p>
+<p>Sebuah elemen HTML terdiri dari tag pembuka(start/open tag), atribut (attribute), isi (content), dan tag penutup(close tag).  </p>
+<figure class="wp-block-image size-large"><img src="data:image/png;base64,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" alt=""></figure>
+<p>pada ilustrasi di atas merupakan sebuah elemen paragraph dibuka dengan tag pembuka <code>&lt;p&gt;</code> . Di dalam tag pembuka tersebut terdapat atribut <code>class</code> yang disematkan ke dalam tag. Isi atau content dari sebuah tag <em>paragraph <code>&lt;p&gt;</code> </em>akan ditampilkan sebagai paragraf. lalu terakhir sebuah tag ditutup dengan sebuah tag penutup. </p>
+<blockquote class="wp-block-quote">
+<p>catatan</p>
+<p><cite>Tidak semua elemen HTML memiliki tag penutup seperti <code>&lt;input&gt; &lt;img&gt; &lt;meta&gt;</code> .<br></cite></p></blockquote>
+<h4>Elemen di dalam elemen (nested element)</h4>
+<p>sebuah elemen HTML dapat terisi dengan elemen-elemen lain di dalamnya. Semua dokumen HTML yang kita lihat di halaman web terdiri dari kumpulan elemen bersarang atau elemen yang mengandung elemen lain di dalamnya. </p>
+<p>Contohnya halaman berikut: </p>
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Pada contoh di atas elemen <code>&lt;html&gt;</code> adalah root element dan merupakan elemen utama di dokument HTML. elemen tersebut dibuka dengan tag pembuka <code>&lt;html&gt; </code>dan ditutup dengan <code>&lt;/html&gt;</code>. Lalu di dalam elemen <code>&lt;html&gt;</code> terdapat elemen<code> &lt;body&gt;</code> .  elemen <code>&lt;body&gt; </code>merupakan elemen yang akan ditampilkan ke halaman web yang diawali dengan tag pembuka <code>&lt;body&gt;</code> dan ditutup dengan sebuah tag penutup <code>&lt;/body&gt;</code> , dan seterusnya sehingga terciptalah sebuah halaman web yang utuh.</p>
+<p></p>
+<p>Untuk mulai berkenalan dengan elemen-elemen pada HTML terdapat video tutorial yang dapat diikuti seperti berikut: </p>
+<ul>
+<li> Belajar HTML dari Dasar oleh Sekolah Koding:  <a href="https://www.youtube.com/playlist?list=PLCZlgfAG0GXC9ojTmU95BRefbJoi4clY-">https://www.youtube.com/playlist?list=PLCZlgfAG0GXC9ojTmU95BRefbJoi4clY-</a>  </li>
+<li>Tutorial HTML Arkademy  : <a href="https://www.youtube.com/playlist?list=PLf61QUuMoXcPC1Yc2km8B5qwWJgQ_7NZr">https://www.youtube.com/playlist?list=PLf61QUuMoXcPC1Yc2km8B5qwWJgQ_7NZr</a> </li>
+</ul>
+<blockquote class="wp-block-quote">
+<p>sumber</p>
+<p><cite>tulisan ini disarikan dari halaman dokumentasi W3schools  :  <a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a>  </cite></p></blockquote>
+<p><!--EndFragment--></p>
+<p>
+
+                    </p></div><!-- .entry-content -->
+
+                    <footer class="entry-footer wedocs-entry-footer">
+                        
+                        <div class="wedocs-article-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="Yoga Febriano">
+                            <meta itemprop="url" content="https://blog.sanbercode.com/author/yogaano/">
+                        </div>
+
+                        <meta itemprop="datePublished" content="2020-07-19T21:00:05+07:00">
+                        <time itemprop="dateModified" datetime="2020-08-25T09:23:12+07:00">Updated on Agustus 25, 2020</time>
+                    </footer>
+
+                    <nav class="wedocs-doc-nav wedocs-hide-print"><h3 class="assistive-text screen-reader-text">Doc navigation</h3><span class="nav-next"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-2-menghias-web-dengan-css/">Hari 2 - Menghias Web dengan CSS →</a></span></nav>
+                    
+                    
+                    
+                </article><!-- #post-## -->
+            </div><!-- .wedocs-single-content -->
+        </div><!-- .wedocs-single-wrap -->
+
+    
+    </main><!-- .site-main --></div><!-- .content-area -->
+</div> <!-- / end container site-content -->
+
+<a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/" class="back-to-top" style="display: inline;"> 
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<div class="container text-center text-md-left">
+<footer class="footer text-muted d-md-flex justify-content-between align-items-center pt-4 pb-4 border-top" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo"> 
+    <div> © Copyright by SanberCode  </div> 
+    <div class="text-md-right"> Powered by <a target="_blank" href="https://sanbersy.com/">PT Sanbersy</a> </div>
+</footer>
+</div>
+
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/"
+        },
+        "headline": "Hari 1 &#8211; Berkenalan dengan HTML",
+        "description": "",
+        "datePublished": "Juli 19, 2020",
+        "dateModified": "Agustus 25, 2020",
+        "image": {
+            "@type": "ImageObject",
+
+                        "url": "",
+            
+            "height": ,
+            "width":         },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SanberCode Blog",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced.png",
+                "height": 60,
+                "width": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Yoga Febriano",
+            "sameAs": [
+                                "https://www.facebook.com/sanbercode",                                                                             ]
+        }
+    }
+</script>
+ 
+
+<style>/* LRM */
+body.logged-in .lrm-hide-if-logged-in { display: none !important; }
+body.logged-in [class*='lrm-hide-if-logged-in'] { display: none !important; }
+body:not(.logged-in) .lrm-show-if-logged-in { display: none !important; }
+body:not(.logged-in) [class*='lrm-show-if-logged-in'] { display: none !important; }
+</style>
+<!--
+-->
+<div class="lrm-main lrm-font-svg lrm-user-modal lrm-btn-style--default" style="visibility: hidden;"> <!-- this is the entire modal form, including the background -->
+<!--<div class="lrm-user-modal" style="visibility: hidden;">  this is the entire modal form, including the background -->
+
+    <div class="lrm-user-modal-container"> <!-- this is the container wrapper -->
+        <div class="lrm-user-modal-container-inner"> <!-- this is the container wrapper -->
+
+            <ul class="lrm-switcher -is-not-login-only">
+
+	<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" class="lrm-switch-to-link lrm-switch-to--login lrm-ficon-login ">
+			Sign in		</a></li>
+
+			<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" class="lrm-switch-to-link lrm-switch-to--register lrm-ficon-register ">
+				New account			</a></li>
+	</ul><div class="lrm-signin-section "> <!-- log in form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" data-action="login">
+        <div class="lrm-fieldset-wrap">
+
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+
+            <p class="lrm-form-message lrm-form-message--init"></p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input name="username" class="full-width has-padding has-border" type="text" aria-label="Email or Username" placeholder="Email or Username" required="" value="" autocomplete="off" data-autofocus="1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-password lrm-ficon-key" title="Password"></label>
+                <input name="password" class="full-width has-padding has-border" type="password" aria-label="Password" placeholder="Password" required="" value="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+                                    <span class="hide-password lrm-ficon-eye" data-show="Show" data-hide="Hide" aria-label="Show"></span>
+                            </div>
+
+            <div class="fieldset">
+                                    <label class="lrm-nice-checkbox__label lrm-remember-me-checkbox">Remember me                        <input type="checkbox" class="lrm-nice-checkbox lrm-remember-me" name="remember-me" checked="">
+                        <div class="lrm-nice-checkbox__indicator"></div>
+                    </label>
+                            </div>
+
+            <div class="lrm-integrations lrm-integrations--login lrm-integrations-before-btn">
+                                            </div>
+
+            <div class="lrm-integrations-otp"></div>
+
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Log in			</button>
+		</div>
+
+        <div class="lrm-fieldset-wrap">
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+        </div>
+
+		<input type="hidden" name="redirect_to" value="">
+		<input type="hidden" name="lrm_action" value="login">
+		<input type="hidden" name="wp-submit" value="1">
+		<!-- Fix for Eduma WP theme-->
+		<input type="hidden" name="lp-ajax" value="login">
+
+		<input type="hidden" id="security-login" name="security-login" value="f2ccf5e805"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" class="lrm-switch-to--reset-password">Forgot your password?</a></p>
+	<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+</div> <!-- lrm-login -->
+	<div class="lrm-signup-section "> <!-- sign up form -->
+		
+			<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" data-action="registration" data-lpignore="true">
+
+                <div class="lrm-fieldset-wrap lrm-form-message-wrap">
+                    <p class="lrm-form-message lrm-form-message--init"></p>
+                </div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                                                                        <div class="fieldset fieldset--username">
+                                                                <label class="image-replace lrm-username lrm-ficon-user" for="signup-username" title="Username*"></label>
+                                <input name="username" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username*" required="" aria-label="Username*" autocomplete="off" data-lpignore="true">
+                                <span class="lrm-error-message"></span>
+                            </div>
+                        
+                                                    <div class="clearfix lrm-row">
+                                                                                                <div class="lrm-col-half-width lrm-col-first fieldset--first-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-first-name" title="First name*"></label>
+                                    <input name="first-name" class="full-width has-padding has-border" id="signup-first-name" type="text" placeholder="First name*" required="" aria-label="First name*" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                                <div class="lrm-col-half-width lrm-col-last fieldset--last-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-last-name" title="Last name"></label>
+                                    <input name="last-name" class="full-width has-padding has-border" id="signup-last-name" type="text" placeholder="Last name" aria-label="Last name" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                            </div>
+                        
+                        <div class="fieldset fieldset--email">
+                                                        <label class="image-replace lrm-email lrm-ficon-mail" for="signup-email" title="Email*"></label>
+                            <input name="email" class="full-width has-padding has-border" id="signup-email" type="email" placeholder="Email*" required="" autocomplete="off" aria-label="Email*">
+                            <span class="lrm-error-message"></span>
+                        </div>
+
+                    
+                                                            
+                    
+                    <div class="lrm-integrations lrm-integrations--register">
+                                                                    </div>
+
+                                            <div class="fieldset fieldset--terms">
+
+                                                            <label class="lrm-nice-checkbox__label lrm-accept-terms-checkbox">I agree with the <a href="https://blog.sanbercode.com/terms">Terms</a>. <i>Edit this in Settings =&gt; Ajax Login Modal =&gt; Expressions tab =&gt; Registration section</i>                                    <input type="checkbox" class="lrm-nice-checkbox lrm-accept-terms" name="registration_terms" value="yes">
+                                    <span class="lrm-error-message"></span>
+                                    <div class="lrm-nice-checkbox__indicator"></div>
+                                </label>
+                            
+                        </div>
+                    
+                    <div class="lrm-integrations lrm-integrations--register lrm-info lrm-info--register">
+                                            </div>
+
+				</div>
+
+				<div class="fieldset fieldset--submit fieldset--default">
+					<button class="full-width has-padding" type="submit">
+						Create account					</button>
+				</div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                </div>
+
+				<input type="hidden" name="redirect_to" value="">
+				<input type="hidden" name="lrm_action" value="signup">
+				<input type="hidden" name="wp-submit" value="1">
+
+				<!-- Fix for Eduma WP theme-->
+				<input type="hidden" name="is_popup_register" value="1">
+				<input type="hidden" id="security-signup" name="security-signup" value="0bf6e678d1"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">				<!-- For Invisible Recaptcha plugin -->
+				<span class="wpcf7-submit" style="display: none;"></span>
+
+			</form>
+
+		
+		<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+	</div> <!-- lrm-signup -->
+
+<div class="lrm-reset-password-section "> <!-- reset password form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" data-action="lost-password">
+
+        <div class="lrm-fieldset-wrap">
+            <p class="lrm-form-message">Lost your password? Please enter your email address. You will receive mail with link to set new password.</p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input class="full-width has-padding has-border" name="user_login" type="text" required="" placeholder="Email or Username" data-autofocus="1" aria-label="Email or Username">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="lrm-integrations lrm-integrations--reset-pass">
+                            </div>
+
+            <input type="hidden" name="lrm_action" value="lostpassword">
+            <input type="hidden" name="wp-submit" value="1">
+            <input type="hidden" id="security-lostpassword" name="security-lostpassword" value="04d701758b"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Reset password			</button>
+		</div>
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" class="lrm-switch-to--login">Back to login</a></p>
+</div> <!-- lrm-reset-password -->
+        </div> <!-- lrm-user-modal-container -->
+        <a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/#0" class="lrm-close-form" title="close">
+            <span class="lrm-ficon-close"></span>
+        </a>
+
+    </div> <!-- lrm-user-modal-container -->
+
+</div> <!-- lrm-user-modal -->
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div><link rel="stylesheet" id="so-css-mundana-css" href="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/so-css-mundana.css" type="text/css" media="all">
+<script type="text/javascript" id="lrm-modal-js-extra">
+/* <![CDATA[ */
+var LRM = {"password_zxcvbn_js_src":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/zxcvbn.min.js","allow_weak_password":"","password_strength_lib":null,"redirect_url":"","ajax_url":"https:\/\/blog.sanbercode.com\/?lrm=1","is_user_logged_in":"","reload_after_login":null,"selectors_mapping":{"login":"","register":""},"is_customize_preview":"","l10n":{"password_is_good":"Good Password","password_is_strong":"Strong Password","password_is_short":"Too Short Password","password_is_bad":"Bad Password","passwords_is_mismatch":"Passwords is mismatch!","passwords_is_weak":"Error: Your password is very weak!"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/lrm-core.js" id="lrm-modal-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/anchor.min.js" id="wedocs-anchorjs-js"></script>
+<script type="text/javascript" id="wedocs-scripts-js-extra">
+/* <![CDATA[ */
+var weDocs_Vars = {"ajaxurl":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","nonce":"fd1b080e4c","style":"https:\/\/blog.sanbercode.com\/wp-content\/plugins\/wedocs\/assets\/css\/print.css","powered":"\u00a9 SanberCode Blog, 2020. Powered by weDocs<br>https:\/\/blog.sanbercode.com"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/frontend.js" id="wedocs-scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/theme.min.js" id="mundana-scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/js.cookie.js" id="jquery-cookie-js"></script>
+<script type="text/javascript" id="wp-claps-applause-js-extra">
+/* <![CDATA[ */
+var clapsapplause = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","lovedText":"","loveText":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/claps-applause.js" id="wp-claps-applause-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/select2.full.min.js" id="select2-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/underscore.min.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/wp-util.min.js" id="wp-util-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-crop.min.js" id="um_crop-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-modal.min.js" id="um_modal-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-jquery-form.min.js" id="um_jquery_form-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-fileupload.min.js" id="um_fileupload-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/picker.js" id="um_datetime-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/picker.date.js" id="um_datetime_date-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/picker.time.js" id="um_datetime_time-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/legacy.js" id="um_datetime_legacy-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/id_ID.js" id="um_datetime_locale-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-raty.min.js" id="um_raty-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-tipsy.min.js" id="um_tipsy-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/jquery.masonry.min.js" id="jquery-masonry-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/simplebar.min.js" id="um_scrollbar-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-functions.min.js" id="um_functions-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-responsive.min.js" id="um_responsive-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-conditional.min.js" id="um_conditional-js"></script>
+<script type="text/javascript" id="um_scripts-js-extra">
+/* <![CDATA[ */
+var um_scripts = {"nonce":"be2304bbb5"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-scripts.min.js" id="um_scripts-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-profile.min.js" id="um_profile-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/um-account.min.js" id="um_account-js"></script>
+<script type="text/javascript" src="./Hari 1 - Berkenalan dengan HTML - SanberCode Blog_files/wp-embed.min.js" id="wp-embed-js"></script>
+		<script type="text/javascript">
+			jQuery( window ).on( 'load', function() {
+				jQuery('input[name="um_request"]').val('');
+			});
+		</script>
+	
+
+
+     
+
+</body></html>
