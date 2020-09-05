@@ -40,7 +40,7 @@ Reward , Bagi Peserta kelas dasar yang memperoleh nilai akhir , >=80 akan memper
 
 Berikut ini timeline materi yang akan dipelajari selama pelatihan ini berlangsung
 
-![alt text](https://github.com/miftanurfarid/Laravel_Web_Development/blob/master/pict/photo_2020-08-24_23-15-18.jpg "Timeline")
+![Timeline Laravel Web Development](https://github.com/miftanurfarid/Laravel_Web_Development/blob/master/pict/photo_2020-08-24_23-15-18.jpg "Timeline")
 
 Aplikasi Penunjang di antaranya: 
 
