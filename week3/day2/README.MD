@@ -17,3 +17,7 @@
 8.  Selengkapnya pengantar tentang MVC bisa ditonton video dari Pak Sandhika Galih :     
 
     https://www.youtube.com/watch?v=tBKOb8Ib5nI
+
+9.  Selanjutnya, agar bisa langsung mencoba MVC, silakan buat sebuah project Laravel dengan mengikuti tutorial dari playlist berikut:
+
+    https://www.youtube.com/playlist?list=PL8YCzrSDCR7it2LAOXVlG3tqtvqBoCn6I
