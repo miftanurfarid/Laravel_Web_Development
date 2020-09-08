@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
+});
+
+Route::get('/coba/{nama}', function ($nama) {
+    return view('coba', ["Namaku" => $nama]);
+});
+
+Route::get('/hai/{namaku}', function ($namaku) {
+    return "Hai $namaku";
+});
+
+Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {
+    return "Ini post: $postId. dan ini komen: $commentId";
 });
