@@ -26,3 +26,9 @@ Route::get('/hai/{namaku}', function ($namaku) {
 Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {
     return "Ini post: $postId. dan ini komen: $commentId";
 });
+
+Route::get('/formulir', 'RegisterController@form');
+
+Route::get('/sapa', 'RegisterController@sapa');
+
+Route::post('/sapa', 'RegisterController@sapa_dong');
