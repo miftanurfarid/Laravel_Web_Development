@@ -21,3 +21,42 @@
 9.  Selanjutnya, agar bisa langsung mencoba MVC, silakan buat sebuah project Laravel dengan mengikuti tutorial dari playlist berikut:
 
     https://www.youtube.com/playlist?list=PL8YCzrSDCR7it2LAOXVlG3tqtvqBoCn6I
+
+10. Materi tulisan (dalam progress) dapat dibaca dari dokumentasi blog sanbercode: 
+
+    https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-2-intro-laravel-instalasi-dan-membuat-web-statis/
+
+    password: `IMLaravelAgustus2020`
+
+11. Tugas hari ini yaitu membuat sebuah web statis menggunakan Laravel. Soal dapat dibaca di blog sanbercode : 
+
+    https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-2-membuat-web-statis-dengan-laravel/ 
+
+    password : `IMLaravelAgustus2020`
+
+12. Pengumpulan tugas ke dasbor sanbercode menggunakan link Gitlab. Batas akhir pengumpulan besok jam 10.00
+
+13. untuk Laravel yang digunakan adalah versi 6*
+
+
+## Info
+
+    Livesession hari ke 2 pekan 3 akan dimulai jam 15.50 wib
+
+## LiveSession
+
+    Live Session membahas Laravel Intro: 
+
+    https://sanbercode.zoom.us/j/92140843140?pwd=MnBmSld3Zjh3NlNyWkZIWWZZK0VUQT09
+
+    Link Baru: 
+
+    https://sanbercode.zoom.us/j/91636619851?pwd=WXNMekV6L3pRLytXejh1a3dmNUhEUT09
+
+## Record
+
+    Live Session Membahas mengenai pengenalan Laravel: 
+
+    https://www.youtube.com/playlist?list=PL8YCzrSDCR7hztRQBc8I1zLuj-tLShK5t
+
+    
