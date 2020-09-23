@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/ -->
+<html lang="id-ID" class="html-has-lrm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="">
+<link rel="pingback" href="https://blog.sanbercode.com/xmlrpc.php">
+
+<title>Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog">
+<meta property="og:url" content="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">
+<meta property="og:site_name" content="SanberCode Blog">
+<meta property="article:publisher" content="https://www.facebook.com/sanbercode">
+<meta property="og:image" content="https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47.png">
+<meta property="og:image:secure_url" content="https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog">
+<meta name="twitter:image" content="https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47.png">
+<script async="" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/page.js"></script><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.sanbercode.com/#organization","name":"SanberCode","url":"https://blog.sanbercode.com/","sameAs":["https://www.facebook.com/sanbercode","https://www.instagram.com/sanbercode/"],"logo":{"@type":"ImageObject","@id":"https://blog.sanbercode.com/#logo","inLanguage":"id-ID","url":"https://blog.sanbercode.com/wp-content/uploads/2019/01/untitled.png","width":225,"height":33,"caption":"SanberCode"},"image":{"@id":"https://blog.sanbercode.com/#logo"}},{"@type":"WebSite","@id":"https://blog.sanbercode.com/#website","url":"https://blog.sanbercode.com/","name":"SanberCode Blog","inLanguage":"id-ID","description":"Ngoding Santai Berkualitas","publisher":{"@id":"https://blog.sanbercode.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://blog.sanbercode.com/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#primaryimage","inLanguage":"id-ID","url":"https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47.png","width":418,"height":135},{"@type":"WebPage","@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#webpage","url":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/","name":"Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog","isPartOf":{"@id":"https://blog.sanbercode.com/#website"},"inLanguage":"id-ID","primaryImageOfPage":{"@id":"https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#primaryimage"},"datePublished":"2020-07-19T14:15:30+00:00","dateModified":"2020-09-10T02:08:44+00:00","potentialAction":[{"@type":"ReadAction","target":["https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Feed" href="https://blog.sanbercode.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Umpan Komentar" href="https://blog.sanbercode.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="SanberCode Blog » Hari 4 – Database &amp; Migration di Laravel Umpan Komentar" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="lrm-modal-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/lrm-core-compiled.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-fonts-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="lrm-modal-skin-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/skin.css" type="text/css" media="all">
+<link rel="stylesheet" id="wedocs-styles-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="post-views-counter-frontend-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/frontend(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="passster-public-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/passster-public.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mundana-styles-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/theme.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="addtoany-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/addtoany.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="claps-applause-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/claps-applause.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_ii-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-fonticons-ii.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_fa-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-fonticons-fa.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_crop-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-crop.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_modal-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-modal.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_styles-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_profile-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-profile.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_account-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-account.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_misc-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-misc.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_fileupload-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-fileupload.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_date-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/default.date.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_time-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/default.time.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_raty-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-raty.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_scrollbar-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/simplebar.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_tipsy-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-tipsy.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_responsive-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="um_default_css-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-old-default.css" type="text/css" media="all">
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/addtoany.min.js" id="addtoany-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/cookie.js" id="passster-cookie-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/captcha.js" id="passster-captcha-js"></script>
+<script type="text/javascript" id="passster-public-js-extra">
+/* <![CDATA[ */
+var ps_ajax = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","days":"1","use_cookie":"on","no_ajax":"off","nonce":"f54a91839b","post_id":"6533","captcha_error":"Sorry, your captcha solution was wrong.","recaptcha_key":"","shortcodes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/passster-public.min.js" id="passster-public-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-gdpr.min.js" id="um-gdpr-js"></script>
+<link rel="https://api.w.org/" href="https://blog.sanbercode.com/wp-json/"><link rel="alternate" type="application/json" href="https://blog.sanbercode.com/wp-json/wp/v2/docs/6533"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.sanbercode.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.sanbercode.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.5.1">
+<link rel="shortlink" href="https://blog.sanbercode.com/?p=6533">
+<link rel="alternate" type="application/json+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-3-materi%2Fhari-4-database-migration-di-laravel%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://blog.sanbercode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.sanbercode.com%2Fdocs%2Fkurikulum-laravel-web-development%2Fpekan-3-materi%2Fhari-4-database-migration-di-laravel%2F&amp;format=xml">
+
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "Email",
+	Bookmark: "Bookmark",
+	ShowAll: "Show all",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via email",
+	SubscribeViaEmail: "Subscribe via email",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Add to your favorites",
+	SendFromWebOrProgram: "Send from any email address or email program",
+	EmailProgram: "Email program",
+	More: "More&#8230;",
+	ThanksForSharing: "Thanks for sharing!",
+	ThanksForFollowing: "Thanks for following!"
+};
+
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+		<style type="text/css">
+			.um_request_name {
+				display: none !important;
+			}
+		</style>
+			<style>
+		.passster-form {
+			background: #F9F9F9;
+			padding: 10px;
+			margin: 0px;
+		}
+		.passster-form h4 {
+			font-size: 20px;
+			font-weight: 700;
+			color: #4998b3;
+		}
+		.passster-form p {
+			font-size: 14px;
+			font-weight: 400;
+			color: #000000;
+		}
+		.passster-submit, .passster-submit-recaptcha, .passster-submit-captcha {
+			color: #FFFFFF !important;
+			background: #4998b3 !important;
+		}
+		.passster-submit:hover, .passster-submit-recaptcha:hover, .passster-submit-captcha:hover {
+			color: #FFFFFF !important;
+			background: #aa1100 !important;
+		}                
+		</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-32x32.png" sizes="32x32">
+<link rel="icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-180x180.png">
+<meta name="msapplication-TileImage" content="https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced-270x270.png">
+<style id="kirki-inline-styles">.mediumnavigation{background-color:#ffffff;}a, a:hover{color:#003366;}#comments a{color:#003366;}.comment-form input.submit, .lrm-form button, .lrm-form button[type=submit]{background-color:#003366;}.comment-form input.submit{border-color:#003366;}input[type="submit"], button, .btn-outline-success:hover{background-color:#003366;}.btn-outline-success, .btn-outline-success:hover{border-color:#003366;}.btn-outline-success{color:#003366;}.introjumbo.bglight{background-color:rgba(175,217,234,0.61);}.introjumbo.bglight, .introjumbo .secondfont{color:#222222;}footer.footer a{color:#1C9963;}body{font-size:1rem;line-height:1.6;color:#222222;}b, strong, .font-weight-bold, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:#222222;}.navbar-brand{font-size:1.65rem;letter-spacing:0px;color:#222222;}.nav-link,.dropdown-item{font-size:0.9rem;letter-spacing:0.1px;text-transform:uppercase;}.article-headline{font-family:Georgia;font-size:3.2rem;font-weight:400;line-height:1.15;color:#222222;}.article-post, #comments .comment-content{font-family:Lora;font-size:1.25rem;font-weight:400;line-height:1.72;color:#444444;}.article-post b, .article-post strong{font-family:Lora;font-weight:700;color:#222222;}.article-post em, .article-post blockquote{font-family:Lora;font-weight:400;font-style:italic;color:#222222;}.introjumbo h1{font-family:Georgia;font-size:2.4rem;font-weight:700;line-height:1.1;}.thesidebar .spanborder.h4{font-size:1.5em;}.widget-area .mc4wp-form{background-color:rgba(175,217,234,0.61);}.widget-area .mc4wp-form input[type="submit"]{background-color:#003366;}.widget-area .mc4wp-form, .mc4wp-form-fields h1, .mc4wp-form-fields h2, .mc4wp-form-fields h3, .mc4wp-form-fields h4, .mc4wp-form-fields h5, .mc4wp-form-fields h6{color:#222222;}@media (max-width: 1280px){.container{max-width:1070px;}}@font-face{font-display:swap;font-family:'Lora';font-style:italic;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFkqs.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:400;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787weuyJF.woff) format('woff');}@font-face{font-display:swap;font-family:'Lora';font-style:normal;font-weight:700;src:url(//blog.sanbercode.com/wp-content/uploads/2020/06/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJF.woff) format('woff');}</style></head> 
+    
+<body class="docs-template-default single single-docs postid-6533 has-lrm"> 
+        
+
+    
+ <style>
+.mediumnavigation {padding-top:15px; padding-bottom:15px;}
+.mediumnavigation.nav-up {padding-top:0;padding-bottom:0;}
+</style>           
+<header id="MagicMenu" class="navbar-light fixed-top navbar mediumnavigation">
+
+    
+<div class="container">
+       
+        <div class="d-lg-flex justify-content-between align-items-center brandrow w-100">
+            
+            <!-- Begin Logo --> 
+            <div class="logoarea">
+                                     <a class="blog-logo" href="https://blog.sanbercode.com/" rel="home"><img src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/untitled.png" alt="SanberCode Blog"></a>
+                                </div>
+            <!-- End Logo --> 
+            
+            
+        
+            <!-- Secondary Top Menu -->
+            
+                <div class="navbar-expand-lg  d-lg-flex align-items-center text-lg-right">
+                    
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#bs4navbar,#bs4navbartop" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menuclose">X</span>
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                 
+                    
+                <div id="bs4navbartop" class="collapse navbar-collapse"><ul id="menu-top-menu" class="navbar-nav w-100 d-lg-flex align-items-center"><li class="menu-item search align-self-center"><form action="https://blog.sanbercode.com/" class="search-form" autocomplete="off">
+				<div class="form-group has-feedback">
+						<input type="hidden" name="post_type" value="post">
+						<input type="text" class="form-control" name="s" placeholder="Type and hit enter...">
+						<i class="fa fa-search form-control-feedback"></i>
+				</div>
+		</form></li><li id="menu-item-813" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-813 nav-item"><a href="https://blog.sanbercode.com/" class="nav-link">Home</a></li>
+<li id="menu-item-863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-863 nav-item dropdown"><a href="https://blog.sanbercode.com/category/bootcamp/indonesia-mengoding/" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Dasar</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-reactjs/" class=" dropdown-item">Kurikulum React Js Web Frontend</a><a href="https://blog.sanbercode.com/docs/kurikulum-desain-grafis/" class=" dropdown-item">Kurikulum Desain Grafis</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/" class=" dropdown-item">Kurikulum Laravel Web Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-centos-wed-server-devops/" class=" dropdown-item">Kurikulum Centos Web Server – Devops</a><a href="https://blog.sanbercode.com/docs/kurikulum-wordpress-development/" class=" dropdown-item">Kurikulum WordPress Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science/" class=" dropdown-item">Kurikulum Python – Data Science</a><a href="https://blog.sanbercode.com/docs/kurikulum-react-native-mobile-apps-development/" class=" dropdown-item">Kurikulum React Native Mobile Apps Development</a><a href="https://blog.sanbercode.com/docs/kurikulum-ui-ux-design/" class=" dropdown-item">Kurikulum UI/UX</a></div>
+</li>
+<li id="menu-item-6310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6310 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Lanjutan</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/kurikulum-react-native-lanjutan/" class=" dropdown-item">Kurikulum React Native Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development-lanjutan-2/" class=" dropdown-item">Kurikulum Laravel Lanjutan</a><a href="https://blog.sanbercode.com/docs/kurikulum-python-data-science-lanjutan/" class=" dropdown-item">Kurikulum Python Data Science Lanjutan</a></div>
+</li>
+<li id="menu-item-9878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9878 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bootcamp Kelas Mitra</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/docs/agile-development-using-scrum-agustus/" class=" dropdown-item">Kurikulum Agile Dev Using Scrum</a></div>
+</li>
+<li id="menu-item-821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-821 nav-item"><a href="https://blog.sanbercode.com/contact/" class="nav-link">Contact</a></li>
+<li id="menu-item-926" class="nmr-logged-in menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-926 nav-item dropdown"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#" class="nav-link dropdown-toggle" data-toggle="dropdown">Editor</a>
+<div class="dropdown-menu">
+<a href="https://blog.sanbercode.com/login/" class=" dropdown-item">Login</a><a href="https://blog.sanbercode.com/register/" class=" dropdown-item">Register</a></div>
+</li>
+</ul></div>      
+                    
+                </div>
+             
+            <!-- Secondary Top Menu -->
+                    
+        </div>
+        
+    
+        <!-- Main Menu -->
+        <div class="navbar-expand-lg d-flex  align-items-center w-100">      
+            
+                   
+        </div>
+        <!-- Main Menu -->
+        
+            
+    </div>
+
+</header>
+    
+       
+<!-- Begin site-content
+================================================== -->
+    
+<div class="container site-content" style="margin-top: 72px;"> 
+   
+    <div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+    
+        <div class="wedocs-single-wrap">
+
+            
+                <div class="wedocs-sidebar wedocs-hide-mobile">
+    
+    <h3 class="widget-title">Kurikulum Laravel Web Development</h3>
+
+            <ul class="doc-nav-list">
+            <li class="page_item page-item-6500 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/">Pekan 1 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6508"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-1-berkenalan-dengan-html/">Hari 1 – Berkenalan dengan HTML</a></li>
+	<li class="page_item page-item-6509"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-2-menghias-web-dengan-css/">Hari 2 – Menghias Web dengan CSS</a></li>
+	<li class="page_item page-item-6510"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-3-lebih-rapi-dengan-css-bootstrap/">Hari 3 – Lebih Rapi dengan CSS Bootstrap</a></li>
+	<li class="page_item page-item-6511"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-4-javascript-dasar/">Hari 4 – Javascript Dasar</a></li>
+	<li class="page_item page-item-6512"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-materi/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6501 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/">Pekan 1 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6513"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-1-berlatih-html/">Hari 1 – Berlatih HTML</a></li>
+	<li class="page_item page-item-6514"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-2-berlatih-css/">Hari 2 – Berlatih CSS</a></li>
+	<li class="page_item page-item-6515"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-3-berlatih-css-bootstrap/">Hari 3 – Berlatih CSS Bootstrap</a></li>
+	<li class="page_item page-item-6516"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-4-javascript-dasar/">Hari 4 – Berlatih Javascript</a></li>
+	<li class="page_item page-item-6517"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-1-tugas-harian/hari-5-dom-javascript/">Hari 5 – DOM Javascript</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6502 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/">Pekan 2 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6518"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/day-1-php-dasar-1-string-dan-array/">Hari 1 – PHP Dasar 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6521"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-2-php-dasar-2-function-looping-control-flow/">Hari 2 – PHP Dasar 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6522"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-3-command-line-dan-git/">Hari 3 – Command Line dan Git</a></li>
+	<li class="page_item page-item-6523"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6524"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-materi/hari-5-belajar-sql/">Hari 5 – Belajar SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6503 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/">Pekan 2 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6525"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-1-php-bagian-1-string-dan-array/">Hari 1 – PHP Bagian 1 (String dan Array)</a></li>
+	<li class="page_item page-item-6526"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-2-php-bagian-2-function-looping-control-flow/">Hari 2 – PHP Bagian 2 (Function, Looping, Control Flow)</a></li>
+	<li class="page_item page-item-6527"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-3-command-line-dan-git/">Hari 3 – Berlatih PHP Bagian 3 (Upload ke Git)</a></li>
+	<li class="page_item page-item-6528"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-4-oop-php/">Hari 4 – OOP PHP</a></li>
+	<li class="page_item page-item-6529"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-2-tugas-harian/hari-5-berlatih-sql/">Hari 5 – Berlatih SQL</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6504 page_item_has_children current_page_ancestor current_page_parent wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/">Pekan 3 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6530"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-1-membuat-desain-erd-untuk-database/">Hari 1 – Membuat desain ERD untuk Database</a></li>
+	<li class="page_item page-item-6531"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-2-intro-laravel-instalasi-dan-membuat-web-statis/">Hari 2 – Intro Laravel (Instalasi dan Membuat Web Statis)</a></li>
+	<li class="page_item page-item-6532"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-3-membuat-template-dengan-blade-laravel/">Hari 3 – Membuat Template dengan Blade Laravel</a></li>
+	<li class="page_item page-item-6533 current_page_item"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/" aria-current="page">Hari 4 – Database &amp; Migration di Laravel</a></li>
+	<li class="page_item page-item-6534"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-5-laravel-crud-create-read-update-delete/">Hari 5 – Laravel CRUD dengan Query Builder</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6505 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/">Pekan 3 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6535"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-1-desain-erd/">Hari 1 – Desain ERD</a></li>
+	<li class="page_item page-item-6536"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-2-membuat-web-statis-dengan-laravel/">Hari 2 – Membuat Web Statis dengan Laravel</a></li>
+	<li class="page_item page-item-6537"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-3-memasangkan-template-dengan-laravel-blade/">Hari 3 – Memasangkan Template dengan Laravel Blade</a></li>
+	<li class="page_item page-item-6538"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-4-mengatur-database-dengan-migration/">Hari 4 – Mengatur Database dengan Migration</a></li>
+	<li class="page_item page-item-6539"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-tugas-harian/hari-5-berlatih-crud-di-laravel/">Hari 5 – Berlatih CRUD di Laravel</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6506 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/">Pekan 4 – Materi<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6543"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6542"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6548"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-materi/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+</ul>
+</li>
+<li class="page_item page-item-6507 page_item_has_children wd-state-closed"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/">Pekan 4 – Tugas Harian<span class="wedocs-caret"></span></a>
+<ul class="children">
+	<li class="page_item page-item-6549"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-1-laravel-crud-dengan-eloquent-orm/">Hari 1 – Laravel CRUD (dengan Eloquent ORM)</a></li>
+	<li class="page_item page-item-6550"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-laravel-auth-dan-middleware/">Hari 2 – Laravel Auth + Middleware</a></li>
+	<li class="page_item page-item-8866"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-2-eloquent-relationships/">Hari 2 – Eloquent Relationships</a></li>
+	<li class="page_item page-item-6551"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-3-laravel-libraries-packages/">Hari 3 – Laravel + Libraries/Packages</a></li>
+	<li class="page_item page-item-6552"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-4-final-project/">Hari 4 – Final Project</a></li>
+	<li class="page_item page-item-6553"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-4-tugas-harian/hari-5-final-project/">Hari 5 – Final Project</a></li>
+</ul>
+</li>
+        </ul>
+    </div>
+
+            
+            <div class="wedocs-single-content">
+                <ol class="wedocs-breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><li><i class="wedocs-icon wedocs-icon-home"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/">
+            <span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/wiki-sanbersy/">
+            <span itemprop="name">Docs</span></a>
+            <meta itemprop="position" content="2">
+        </li><li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/">
+            <span itemprop="name">Kurikulum Laravel Web Development</span></a>
+            <meta itemprop="position" content="4">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/">
+            <span itemprop="name">Pekan 3 – Materi</span></a>
+            <meta itemprop="position" content="3">
+        </li> <li class="delimiter"><i class="wedocs-icon wedocs-icon-angle-right"></i></li>  <li><span class="current">Hari 4 – Database &amp; Migration di Laravel</span></li></ol>
+                <article id="post-6533" class="post-6533 docs type-docs status-publish hentry" itemscope="" itemtype="http://schema.org/Article">
+                    <header class="entry-header">
+                        <h1 class="entry-title" itemprop="headline">Hari 4 – Database &amp; Migration di Laravel</h1>
+                                            </header><!-- .entry-header -->
+
+                    <div class="entry-content" itemprop="articleBody">
+                        
+<p></p>
+
+
+
+<p></p>
+<p class="has-medium-font-size"><strong>Pengetian Migration di laravel</strong></p>
+<p>migrate adalah fitur pada laravel yang berfungsi mengelolah database</p>
+<p class="has-medium-font-size"><strong>mengkonesikan laravel dengan database</strong></p>
+<p>cara mengkoneksikan laravel dan database adalah denagn cara mengatur file .env</p>
+<figure class="wp-block-image size-large"><img loading="lazy" width="418" height="135" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/image-47.png" alt="" class="wp-image-10689" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47.png 418w, https://blog.sanbercode.com/wp-content/uploads/2020/09/image-47-300x97.png 300w" sizes="(max-width: 418px) 100vw, 418px"></figure>
+<p class="has-medium-font-size"><strong>Membuat migration</strong></p>
+<p>cara membuat migration dapat dibuat di terminal/cmd</p>
+<pre class="wp-block-code"><code>php artisan make:migration create_users_table</code></pre>
+<p>jika selesai maka filenya akan berbentuk <strong>2020_10_09_0930_create_users_table</strong> yang biasa terletak pada folder database/migrations<br>nb: 2020_10_0930 merupakan tanggal dan waktu pembuatan migration</p>
+<p class="has-medium-font-size"><strong>Migration</strong></p>
+<figure class="wp-block-image size-large"><img loading="lazy" width="458" height="474" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/image-48.png" alt="" class="wp-image-10691" srcset="https://blog.sanbercode.com/wp-content/uploads/2020/09/image-48.png 458w, https://blog.sanbercode.com/wp-content/uploads/2020/09/image-48-290x300.png 290w" sizes="(max-width: 458px) 100vw, 458px"></figure>
+<p>Screma::create(‘users’,……….); berfungsi membuat table dengan nama users<br>$table-&gt;bigIncrement(‘id’); berfungsi membuat kolom dengan nama ‘id’ dan bertipe data int dan ter auto increment<br>$table-&gt;string(’email’)-&gt;unique(); berfungsi membuat kolom dengan nama ’email’ yang pertipe data string dan ditable akan bertipe data varchar<br>$table-&gt;timestamps(); berfungsi membuat kolom created_at yang bertipe data timestaps yang berfungsi mencatat waktu dan tanggal saat pembuatan data dan updated_at  berfungsi mencatat waktu dan tanggal saat data di update</p>
+<p class="has-medium-font-size"><strong>Membuat foreign key di migrate</strong></p>
+<pre class="wp-block-code"><code>$table-&gt;unsignedBigInteger('role_id');
+$table-&gt;foreign('role_id')-&gt;references('id')-&gt;on('users');</code></pre>
+<p>$table-&gt;unsignedBigInteger(‘role_id’) berfungsi membuat kolom dengan nama role_id dengan type data int<br>$table-&gt;foreign(‘role_id’)-&gt;references(‘id’)-&gt;on(‘users’); berfungsi membuat kolom role_id menjadi foreign key yang berefences ke id pada tabel users</p>
+<p>NB: sebelum membuat references ke table yang dituju sebaiknya buat dulu tabel yang dituju</p>
+<p class="has-medium-font-size"><strong>Cara menjalankan migrate</strong></p>
+<p>cara menjalankan migrate dapat dijalankan di cmd/terminal</p>
+<pre class="wp-block-code"><code>php artisan migrate</code></pre>
+<p></p>
+<p>
+
+
+
+</p><p><!--EndFragment--></p>                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer wedocs-entry-footer">
+                        
+                        <div class="wedocs-article-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="rezky putra">
+                            <meta itemprop="url" content="https://blog.sanbercode.com/author/rezky25/">
+                        </div>
+
+                        <meta itemprop="datePublished" content="2020-07-19T21:15:30+07:00">
+                        <time itemprop="dateModified" datetime="2020-09-10T09:08:44+07:00">Updated on September 10, 2020</time>
+                    </footer>
+
+                    <nav class="wedocs-doc-nav wedocs-hide-print"><h3 class="assistive-text screen-reader-text">Doc navigation</h3><span class="nav-prev"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-3-membuat-template-dengan-blade-laravel/">← Hari 3 - Membuat Template dengan Blade Laravel</a></span><span class="nav-next"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-5-laravel-crud-create-read-update-delete/">Hari 5 - Laravel CRUD dengan Query Builder →</a></span></nav>
+                    
+                    
+                    
+                </article><!-- #post-## -->
+            </div><!-- .wedocs-single-content -->
+        </div><!-- .wedocs-single-wrap -->
+
+    
+    </main><!-- .site-main --></div><!-- .content-area -->
+</div> <!-- / end container site-content -->
+
+<a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/" class="back-to-top"> 
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<div class="container text-center text-md-left">
+<footer class="footer text-muted d-md-flex justify-content-between align-items-center pt-4 pb-4 border-top" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo"> 
+    <div> © Copyright by SanberCode  </div> 
+    <div class="text-md-right"> Powered by <a target="_blank" href="https://sanbersy.com/">PT Sanbersy</a> </div>
+</footer>
+</div>
+
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/"
+        },
+        "headline": "Hari 4 &#8211; Database &#038; Migration di Laravel",
+        "description": "",
+        "datePublished": "Juli 19, 2020",
+        "dateModified": "September 10, 2020",
+        "image": {
+            "@type": "ImageObject",
+
+                        "url": "",
+            
+            "height": ,
+            "width":         },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SanberCode Blog",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.sanbercode.com/wp-content/uploads/2019/01/cropped-logo-reduced.png",
+                "height": 60,
+                "width": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "rezky putra",
+            "sameAs": [
+                                "https://www.facebook.com/sanbercode",                                                                             ]
+        }
+    }
+</script>
+ 
+
+<style>/* LRM */
+body.logged-in .lrm-hide-if-logged-in { display: none !important; }
+body.logged-in [class*='lrm-hide-if-logged-in'] { display: none !important; }
+body:not(.logged-in) .lrm-show-if-logged-in { display: none !important; }
+body:not(.logged-in) [class*='lrm-show-if-logged-in'] { display: none !important; }
+</style>
+<!--
+-->
+<div class="lrm-main lrm-font-svg lrm-user-modal lrm-btn-style--default" style="visibility: hidden;"> <!-- this is the entire modal form, including the background -->
+<!--<div class="lrm-user-modal" style="visibility: hidden;">  this is the entire modal form, including the background -->
+
+    <div class="lrm-user-modal-container"> <!-- this is the container wrapper -->
+        <div class="lrm-user-modal-container-inner"> <!-- this is the container wrapper -->
+
+            <ul class="lrm-switcher -is-not-login-only">
+
+	<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" class="lrm-switch-to-link lrm-switch-to--login lrm-ficon-login ">
+			Sign in		</a></li>
+
+			<li><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" class="lrm-switch-to-link lrm-switch-to--register lrm-ficon-register ">
+				New account			</a></li>
+	</ul><div class="lrm-signin-section "> <!-- log in form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" data-action="login">
+        <div class="lrm-fieldset-wrap">
+
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+
+            <p class="lrm-form-message lrm-form-message--init"></p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input name="username" class="full-width has-padding has-border" type="text" aria-label="Email or Username" placeholder="Email or Username" required="" value="" autocomplete="off" data-autofocus="1" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-password lrm-ficon-key" title="Password"></label>
+                <input name="password" class="full-width has-padding has-border" type="password" aria-label="Password" placeholder="Password" required="" value="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                <span class="lrm-error-message"></span>
+                                    <span class="hide-password lrm-ficon-eye" data-show="Show" data-hide="Hide" aria-label="Show"></span>
+                            </div>
+
+            <div class="fieldset">
+                                    <label class="lrm-nice-checkbox__label lrm-remember-me-checkbox">Remember me                        <input type="checkbox" class="lrm-nice-checkbox lrm-remember-me" name="remember-me" checked="">
+                        <div class="lrm-nice-checkbox__indicator"></div>
+                    </label>
+                            </div>
+
+            <div class="lrm-integrations lrm-integrations--login lrm-integrations-before-btn">
+                                            </div>
+
+            <div class="lrm-integrations-otp"></div>
+
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Log in			</button>
+		</div>
+
+        <div class="lrm-fieldset-wrap">
+            <div class="lrm-integrations lrm-integrations--login">
+                            </div>
+        </div>
+
+		<input type="hidden" name="redirect_to" value="">
+		<input type="hidden" name="lrm_action" value="login">
+		<input type="hidden" name="wp-submit" value="1">
+		<!-- Fix for Eduma WP theme-->
+		<input type="hidden" name="lp-ajax" value="login">
+
+		<input type="hidden" id="security-login" name="security-login" value="3b9adaf4ba"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" class="lrm-switch-to--reset-password">Forgot your password?</a></p>
+	<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+</div> <!-- lrm-login -->
+	<div class="lrm-signup-section "> <!-- sign up form -->
+		
+			<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" data-action="registration" data-lpignore="true">
+
+                <div class="lrm-fieldset-wrap lrm-form-message-wrap">
+                    <p class="lrm-form-message lrm-form-message--init"></p>
+                </div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                                                                        <div class="fieldset fieldset--username">
+                                                                <label class="image-replace lrm-username lrm-ficon-user" for="signup-username" title="Username*"></label>
+                                <input name="username" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username*" required="" aria-label="Username*" autocomplete="off" data-lpignore="true">
+                                <span class="lrm-error-message"></span>
+                            </div>
+                        
+                                                    <div class="clearfix lrm-row">
+                                                                                                <div class="lrm-col-half-width lrm-col-first fieldset--first-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-first-name" title="First name*"></label>
+                                    <input name="first-name" class="full-width has-padding has-border" id="signup-first-name" type="text" placeholder="First name*" required="" aria-label="First name*" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                                <div class="lrm-col-half-width lrm-col-last fieldset--last-name lrm-col">
+                                    <label class="image-replace lrm-username lrm-ficon-user" for="signup-last-name" title="Last name"></label>
+                                    <input name="last-name" class="full-width has-padding has-border" id="signup-last-name" type="text" placeholder="Last name" aria-label="Last name" autocomplete="off" data-lpignore="true">
+                                    <span class="lrm-error-message"></span>
+                                </div>
+                            </div>
+                        
+                        <div class="fieldset fieldset--email">
+                                                        <label class="image-replace lrm-email lrm-ficon-mail" for="signup-email" title="Email*"></label>
+                            <input name="email" class="full-width has-padding has-border" id="signup-email" type="email" placeholder="Email*" required="" autocomplete="off" aria-label="Email*">
+                            <span class="lrm-error-message"></span>
+                        </div>
+
+                    
+                                                            
+                    
+                    <div class="lrm-integrations lrm-integrations--register">
+                                                                    </div>
+
+                                            <div class="fieldset fieldset--terms">
+
+                                                            <label class="lrm-nice-checkbox__label lrm-accept-terms-checkbox">I agree with the <a href="https://blog.sanbercode.com/terms">Terms</a>. <i>Edit this in Settings =&gt; Ajax Login Modal =&gt; Expressions tab =&gt; Registration section</i>                                    <input type="checkbox" class="lrm-nice-checkbox lrm-accept-terms" name="registration_terms" value="yes">
+                                    <span class="lrm-error-message"></span>
+                                    <div class="lrm-nice-checkbox__indicator"></div>
+                                </label>
+                            
+                        </div>
+                    
+                    <div class="lrm-integrations lrm-integrations--register lrm-info lrm-info--register">
+                                            </div>
+
+				</div>
+
+				<div class="fieldset fieldset--submit fieldset--default">
+					<button class="full-width has-padding" type="submit">
+						Create account					</button>
+				</div>
+
+                <div class="lrm-fieldset-wrap">
+
+                    <div class="lrm-integrations lrm-integrations--register">
+                                            </div>
+
+                </div>
+
+				<input type="hidden" name="redirect_to" value="">
+				<input type="hidden" name="lrm_action" value="signup">
+				<input type="hidden" name="wp-submit" value="1">
+
+				<!-- Fix for Eduma WP theme-->
+				<input type="hidden" name="is_popup_register" value="1">
+				<input type="hidden" id="security-signup" name="security-signup" value="444de4a15f"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">				<!-- For Invisible Recaptcha plugin -->
+				<span class="wpcf7-submit" style="display: none;"></span>
+
+			</form>
+
+		
+		<!-- <a href="#0" class="lrm-close-form">Close</a> -->
+	</div> <!-- lrm-signup -->
+
+<div class="lrm-reset-password-section "> <!-- reset password form -->
+	<form class="lrm-form" action="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" data-action="lost-password">
+
+        <div class="lrm-fieldset-wrap">
+            <p class="lrm-form-message">Lost your password? Please enter your email address. You will receive mail with link to set new password.</p>
+
+            <div class="fieldset">
+                                <label class="image-replace lrm-email lrm-ficon-mail" title="Email or Username"></label>
+                <input class="full-width has-padding has-border" name="user_login" type="text" required="" placeholder="Email or Username" data-autofocus="1" aria-label="Email or Username">
+                <span class="lrm-error-message"></span>
+            </div>
+
+            <div class="lrm-integrations lrm-integrations--reset-pass">
+                            </div>
+
+            <input type="hidden" name="lrm_action" value="lostpassword">
+            <input type="hidden" name="wp-submit" value="1">
+            <input type="hidden" id="security-lostpassword" name="security-lostpassword" value="63b69bdaae"><input type="hidden" name="_wp_http_referer" value="/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/">
+        </div>
+
+		<div class="fieldset fieldset--submit fieldset--default">
+			<button class="full-width has-padding" type="submit">
+				Reset password			</button>
+		</div>
+		<!-- For Invisible Recaptcha plugin -->
+		<span class="wpcf7-submit" style="display: none;"></span>
+
+	</form>
+
+	<p class="lrm-form-bottom-message"><a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" class="lrm-switch-to--login">Back to login</a></p>
+</div> <!-- lrm-reset-password -->
+        </div> <!-- lrm-user-modal-container -->
+        <a href="https://blog.sanbercode.com/docs/kurikulum-laravel-web-development/pekan-3-materi/hari-4-database-migration-di-laravel/#0" class="lrm-close-form" title="close">
+            <span class="lrm-ficon-close"></span>
+        </a>
+
+    </div> <!-- lrm-user-modal-container -->
+
+</div> <!-- lrm-user-modal -->
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div><link rel="stylesheet" id="so-css-mundana-css" href="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/so-css-mundana.css" type="text/css" media="all">
+<script type="text/javascript" id="lrm-modal-js-extra">
+/* <![CDATA[ */
+var LRM = {"password_zxcvbn_js_src":"https:\/\/blog.sanbercode.com\/wp-includes\/js\/zxcvbn.min.js","allow_weak_password":"","password_strength_lib":null,"redirect_url":"","ajax_url":"https:\/\/blog.sanbercode.com\/?lrm=1","is_user_logged_in":"","reload_after_login":null,"selectors_mapping":{"login":"","register":""},"is_customize_preview":"","l10n":{"password_is_good":"Good Password","password_is_strong":"Strong Password","password_is_short":"Too Short Password","password_is_bad":"Bad Password","passwords_is_mismatch":"Passwords is mismatch!","passwords_is_weak":"Error: Your password is very weak!"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/lrm-core.js" id="lrm-modal-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/anchor.min.js" id="wedocs-anchorjs-js"></script>
+<script type="text/javascript" id="wedocs-scripts-js-extra">
+/* <![CDATA[ */
+var weDocs_Vars = {"ajaxurl":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","nonce":"f7fed1889c","style":"https:\/\/blog.sanbercode.com\/wp-content\/plugins\/wedocs\/assets\/css\/print.css","powered":"\u00a9 SanberCode Blog, 2020. Powered by weDocs<br>https:\/\/blog.sanbercode.com"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/frontend.js" id="wedocs-scripts-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/theme.min.js" id="mundana-scripts-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/js.cookie.js" id="jquery-cookie-js"></script>
+<script type="text/javascript" id="wp-claps-applause-js-extra">
+/* <![CDATA[ */
+var clapsapplause = {"ajax_url":"https:\/\/blog.sanbercode.com\/wp-admin\/admin-ajax.php","lovedText":"","loveText":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/claps-applause.js" id="wp-claps-applause-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/select2.full.min.js" id="select2-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/underscore.min.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/wp-util.min.js" id="wp-util-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-crop.min.js" id="um_crop-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-modal.min.js" id="um_modal-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-jquery-form.min.js" id="um_jquery_form-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-fileupload.min.js" id="um_fileupload-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/picker.js" id="um_datetime-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/picker.date.js" id="um_datetime_date-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/picker.time.js" id="um_datetime_time-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/legacy.js" id="um_datetime_legacy-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/id_ID.js" id="um_datetime_locale-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://blog.sanbercode.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-raty.min.js" id="um_raty-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-tipsy.min.js" id="um_tipsy-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/jquery.masonry.min.js" id="jquery-masonry-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/simplebar.min.js" id="um_scrollbar-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-functions.min.js" id="um_functions-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-responsive.min.js" id="um_responsive-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-conditional.min.js" id="um_conditional-js"></script>
+<script type="text/javascript" id="um_scripts-js-extra">
+/* <![CDATA[ */
+var um_scripts = {"nonce":"f0a3846251"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-scripts.min.js" id="um_scripts-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-profile.min.js" id="um_profile-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/um-account.min.js" id="um_account-js"></script>
+<script type="text/javascript" src="./Hari 4 - Database &amp; Migration di Laravel - SanberCode Blog_files/wp-embed.min.js" id="wp-embed-js"></script>
+		<script type="text/javascript">
+			jQuery( window ).on( 'load', function() {
+				jQuery('input[name="um_request"]').val('');
+			});
+		</script>
+	
+
+
+     
+
+</body></html>
