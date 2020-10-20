@@ -1,5 +1,7 @@
 # Selamat Datang Peserta 
 
+##### Catatan peserta Web Development Batch Agustus 2020
+
 Indonesia Mengoding Laravel -  Web Development Batch Agustus!
 
 Channel bersifat searah, berisi pengantar materi dan info - info terkait pelatihan..
