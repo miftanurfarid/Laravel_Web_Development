@@ -100,3 +100,8 @@ https://t.me/joinchat/N26HyhxzKBrIA0hSkQV7cQ
 23. Laravel adalah sebuah framework berbasis bahasa pemrograman PHP.
 24. Di Laravel inilah yang menjadi “raja terakhir” bootcamp kita. Di dalamnya kita mengintegrasikan materi-materi yang dipelajari sebelumnya untuk membuat sebuah website yang berkualitas.
 25. Begitu panjang dan rumit penjelasan  di atas mengenai materi-materi dan perannya dalam web development namun yang terpenting pelajari saja satu per satu dengan santai nan berkualitas 😎
+
+
+Bagi yang ingin mengakses materi pada blog sanbecode bisa memakai password :
+
+IMAlumniLaravel
